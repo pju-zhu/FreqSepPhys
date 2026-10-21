@@ -1,0 +1,86 @@
+# ============================================================
+# FreqSepPhys 推理配置文件 (PURE→UBFC-rPPG)
+# 说明：在PURE数据集上训练的模型，在UBFC-rPPG数据集上跨域测试
+# 注意：请将所有 <YOUR_PROJECT_PATH> 替换为你的实际项目路径
+#       请将 <MODEL_PATH> 替换为实际的模型权重路径
+# ============================================================
+
+TOOLBOX_MODE: only_test
+
+VALID:
+  DATA:
+    FS: 30
+    DATASET: PURE
+    DO_PREPROCESS: False
+    DATA_FORMAT: NCDHW
+    DATA_PATH: "<YOUR_PROJECT_PATH>/data/PURE/RawData"
+    CACHED_PATH: "<YOUR_PROJECT_PATH>/data/PURE/PreprocessedData"
+    BEGIN: 0.8
+    END: 1.0
+    PREPROCESS:
+      DATA_TYPE: ["DiffNormalized"]
+      LABEL_TYPE: DiffNormalized
+      DO_CHUNK: True
+      CHUNK_LENGTH: 128
+      CROP_FACE:
+        DO_CROP_FACE: True
+        BACKEND: HC
+        USE_LARGE_FACE_BOX: True
+        LARGE_BOX_COEF: 1.5
+        DETECTION:
+          DO_DYNAMIC_DETECTION: False
+          DYNAMIC_DETECTION_FREQUENCY: 30
+          USE_MEDIAN_FACE_BOX: False
+      RESIZE:
+        H: 128
+        W: 128
+      DATA_AUG: ["None"]
+      USE_PSUEDO_PPG_LABEL: False
+
+TEST:
+  METRICS: ["MAE", "RMSE", "MAPE", "Pearson", "SNR", "BA"]
+  USE_LAST_EPOCH: True
+  OUTPUT_SAVE_DIR: ""
+  DATA:
+    FS: 30
+    DATASET: UBFC-rPPG
+    DO_PREPROCESS: False
+    DATA_FORMAT: NCDHW
+    DATA_PATH: "<YOUR_PROJECT_PATH>/data/UBFC-rPPG/RawData"
+    CACHED_PATH: "<YOUR_PROJECT_PATH>/data/UBFC-rPPG/PreprocessedData"
+    BEGIN: 0.0
+    END: 1.0
+    PREPROCESS:
+      DATA_TYPE: ["DiffNormalized"]
+      LABEL_TYPE: DiffNormalized
+      DO_CHUNK: True
+      CHUNK_LENGTH: 128
+      CROP_FACE:
+        DO_CROP_FACE: True
+        BACKEND: HC
+        USE_LARGE_FACE_BOX: True
+        LARGE_BOX_COEF: 1.5
+        DETECTION:
+          DO_DYNAMIC_DETECTION: False
+          DYNAMIC_DETECTION_FREQUENCY: 30
+          USE_MEDIAN_FACE_BOX: False
+      RESIZE:
+        H: 128
+        W: 128
+      DATA_AUG: ["None"]
+      USE_PSUEDO_PPG_LABEL: False
+
+DEVICE: cuda:0
+LOG:
+  PATH: runs/exp_ours
+
+MODEL:
+  NAME: FreqSepPhys
+
+INFERENCE:
+  MODEL_PATH: "<MODEL_PATH>/PURE_PURE_UBFC_FreqSepPhys_Epoch4.pth"
+  BATCH_SIZE: 4
+  EVALUATION_METHOD: FFT
+  EVALUATION_WINDOW:
+    USE_SMALLER_WINDOW: False
+    WINDOW_SIZE: 1.6

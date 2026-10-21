@@ -1,0 +1,144 @@
+# ============================================================
+# FreqSepPhys++ 训练配置文件
+# 说明：基于PURE数据集训练，在PURE和UBFC-rPPG上测试
+# 四创新点：AFD(自适应频率分解) + FreqTTA(频率感知TTA)
+#           + SCP(频谱对比预训练) + CDRE(跨域鲁棒性增强)
+# 注意：请将所有 <YOUR_PROJECT_PATH> 替换为你的实际项目路径
+# ============================================================
+
+TOOLBOX_MODE: train_and_test
+
+# ── FreqSepPhys++ 创新点配置 ──
+TRAIN:
+  BATCH_SIZE: 4
+  EPOCHS: 20
+  LR: 6e-3
+  MODEL_FILE_NAME: PURE_PURE_UBFC_FreqSepPhysPlusPlus
+
+  # 创新点1 AFD配置
+  AFD_MODE: anisotropic          # 'learnable'|'adaptive'|'anisotropic'
+
+  # 创新点3 SCP预训练配置
+  USE_SCP_PRETRAIN: True
+  SCP_PRETRAIN_EPOCHS: 10
+  SCP_LR: 1.0e-3
+
+  # 创新点4 CDRE配置
+  USE_CDRE_STEM: True            # 光照不变Stem
+  USE_MOTION_GATE: True          # 运动鲁棒性门控
+  USE_FREQ_AUG: True             # HR频域增强
+
+  # 损失权重
+  LAMBDA_PROJ: 0.1               # 色彩投影紧框架约束
+  LAMBDA_AFD: 0.3                # 六块AFD正交/能量/σ分离约束
+  LAMBDA_MOTION: 0.01            # MotionGate平滑与稀疏正则
+
+  DATA:
+    FS: 30
+    DATASET: PURE
+    DO_PREPROCESS: False
+    DATA_FORMAT: NCDHW
+    DATA_PATH: "<YOUR_PROJECT_PATH>/data/PURE/RawData"
+    CACHED_PATH: "<YOUR_PROJECT_PATH>/data/PURE/PreprocessedData"
+    BEGIN: 0.0
+    END: 0.8
+    PREPROCESS:
+      DATA_TYPE: ["DiffNormalized"]
+      LABEL_TYPE: DiffNormalized
+      DO_CHUNK: True
+      CHUNK_LENGTH: 128
+      CROP_FACE:
+        DO_CROP_FACE: True
+        BACKEND: HC
+        USE_LARGE_FACE_BOX: True
+        LARGE_BOX_COEF: 1.5
+        DETECTION:
+          DO_DYNAMIC_DETECTION: False
+          DYNAMIC_DETECTION_FREQUENCY: 30
+          USE_MEDIAN_FACE_BOX: False
+      RESIZE:
+        H: 128
+        W: 128
+      DATA_AUG: ["None"]
+      USE_PSUEDO_PPG_LABEL: False
+
+VALID:
+  DATA:
+    FS: 30
+    DATASET: PURE
+    DO_PREPROCESS: False
+    DATA_FORMAT: NCDHW
+    DATA_PATH: "<YOUR_PROJECT_PATH>/data/PURE/RawData"
+    CACHED_PATH: "<YOUR_PROJECT_PATH>/data/PURE/PreprocessedData"
+    BEGIN: 0.8
+    END: 1.0
+    PREPROCESS:
+      DATA_TYPE: ["DiffNormalized"]
+      LABEL_TYPE: DiffNormalized
+      DO_CHUNK: True
+      CHUNK_LENGTH: 128
+      CROP_FACE:
+        DO_CROP_FACE: True
+        BACKEND: HC
+        USE_LARGE_FACE_BOX: True
+        LARGE_BOX_COEF: 1.5
+        DETECTION:
+          DO_DYNAMIC_DETECTION: False
+          DYNAMIC_DETECTION_FREQUENCY: 30
+          USE_MEDIAN_FACE_BOX: False
+      RESIZE:
+        H: 128
+        W: 128
+      DATA_AUG: ["None"]
+      USE_PSUEDO_PPG_LABEL: False
+
+TEST:
+  METRICS: ["MAE", "RMSE", "MAPE", "Pearson", "SNR", "BA"]
+  USE_LAST_EPOCH: False
+  OUTPUT_SAVE_DIR: ""
+
+  # 创新点2 FreqTTA配置
+  USE_TTA: False                 # 默认关闭，跨域测试时开启
+
+  DATA:
+    FS: 30
+    DATASET: PURE
+    DO_PREPROCESS: False
+    DATA_FORMAT: NCDHW
+    DATA_PATH: "<YOUR_PROJECT_PATH>/data/PURE/RawData"
+    CACHED_PATH: "<YOUR_PROJECT_PATH>/data/PURE/PreprocessedData"
+    BEGIN: 0.8
+    END: 1.0
+    PREPROCESS:
+      DATA_TYPE: ["DiffNormalized"]
+      LABEL_TYPE: DiffNormalized
+      DO_CHUNK: True
+      CHUNK_LENGTH: 128
+      CROP_FACE:
+        DO_CROP_FACE: True
+        BACKEND: HC
+        USE_LARGE_FACE_BOX: True
+        LARGE_BOX_COEF: 1.5
+        DETECTION:
+          DO_DYNAMIC_DETECTION: False
+          DYNAMIC_DETECTION_FREQUENCY: 30
+          USE_MEDIAN_FACE_BOX: False
+      RESIZE:
+        H: 128
+        W: 128
+      DATA_AUG: ["None"]
+      USE_PSUEDO_PPG_LABEL: False
+
+DEVICE: cuda:0
+LOG:
+  PATH: runs/exp_FreqSepPhysPlusPlus
+
+MODEL:
+  NAME: FreqSepPhysPlusPlus
+
+INFERENCE:
+  BATCH_SIZE: 4
+  EVALUATION_METHOD: FFT
+  EVALUATION_WINDOW:
+    USE_SMALLER_WINDOW: False
+    WINDOW_SIZE: 1.6
