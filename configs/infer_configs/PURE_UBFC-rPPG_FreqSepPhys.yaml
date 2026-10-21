@@ -1,86 +1,76 @@
-# ============================================================
-# FreqSepPhys 推理配置文件 (PURE→UBFC-rPPG)
-# 说明：在PURE数据集上训练的模型，在UBFC-rPPG数据集上跨域测试
-# 注意：请将所有 <YOUR_PROJECT_PATH> 替换为你的实际项目路径
-#       请将 <MODEL_PATH> 替换为实际的模型权重路径
-# ============================================================
-
-TOOLBOX_MODE: only_test
-
+BASE: ['']
+TOOLBOX_MODE: "only_test"  # "train_and_test"  or "only_test"
 VALID:
   DATA:
     FS: 30
     DATASET: PURE
-    DO_PREPROCESS: False
+    DO_PREPROCESS: False                # if first time, should be true
     DATA_FORMAT: NCDHW
-    DATA_PATH: "<YOUR_PROJECT_PATH>/data/PURE/RawData"
-    CACHED_PATH: "<YOUR_PROJECT_PATH>/data/PURE/PreprocessedData"
+    DATA_PATH: "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData"                     # Raw dataset path, need to be updated
+    CACHED_PATH: "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData"    # Processed dataset save path, need to be updated
+    FILE_LIST_PATH: "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData"    # Path to store file lists, needs to be updated
+    EXP_DATA_NAME: ""
     BEGIN: 0.8
     END: 1.0
     PREPROCESS:
-      DATA_TYPE: ["DiffNormalized"]
+      DATA_TYPE: ['DiffNormalized']         # if use physnet, should be DiffNormalized
+      DATA_AUG: ['None']    # 'None' or 'Motion' is supported, used if the data path points to an augmented dataset or requires augmentation
       LABEL_TYPE: DiffNormalized
       DO_CHUNK: True
-      CHUNK_LENGTH: 128
+      CHUNK_LENGTH: 128                 # only support for factor of 512
       CROP_FACE:
         DO_CROP_FACE: True
-        BACKEND: HC
+        BACKEND: 'HC'    # HC for Haar Cascade, Y5F for YOLO5Face
         USE_LARGE_FACE_BOX: True
         LARGE_BOX_COEF: 1.5
         DETECTION:
           DO_DYNAMIC_DETECTION: False
-          DYNAMIC_DETECTION_FREQUENCY: 30
-          USE_MEDIAN_FACE_BOX: False
+          DYNAMIC_DETECTION_FREQUENCY : 30
+          USE_MEDIAN_FACE_BOX: False    # This should be used ONLY if dynamic detection is used
       RESIZE:
         H: 128
         W: 128
-      DATA_AUG: ["None"]
-      USE_PSUEDO_PPG_LABEL: False
-
 TEST:
-  METRICS: ["MAE", "RMSE", "MAPE", "Pearson", "SNR", "BA"]
-  USE_LAST_EPOCH: True
-  OUTPUT_SAVE_DIR: ""
+  METRICS: ['MAE', 'RMSE', 'MAPE', 'Pearson', 'SNR', 'BA']
+  USE_LAST_EPOCH: False                   # to use provided validation dataset to find the best epoch, should be false
   DATA:
     FS: 30
     DATASET: UBFC-rPPG
-    DO_PREPROCESS: False
+    DO_PREPROCESS: False                  # if first time, should be true
     DATA_FORMAT: NCDHW
-    DATA_PATH: "<YOUR_PROJECT_PATH>/data/UBFC-rPPG/RawData"
-    CACHED_PATH: "<YOUR_PROJECT_PATH>/data/UBFC-rPPG/PreprocessedData"
+    DATA_PATH: "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData"                     # Raw dataset path, need to be updated
+    CACHED_PATH: "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData"    # Processed dataset save path, need to be updated
+    FILE_LIST_PATH: "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData"    # Path to store file lists, needs to be updated
+    EXP_DATA_NAME: ""
     BEGIN: 0.0
     END: 1.0
     PREPROCESS:
-      DATA_TYPE: ["DiffNormalized"]
+      DATA_TYPE: ['DiffNormalized']         # if use physnet, should be DiffNormalized
       LABEL_TYPE: DiffNormalized
       DO_CHUNK: True
-      CHUNK_LENGTH: 128
+      CHUNK_LENGTH: 128                 # only support for factor of 512
       CROP_FACE:
         DO_CROP_FACE: True
-        BACKEND: HC
+        BACKEND: 'HC'    # HC for Haar Cascade, Y5F for YOLO5Face
         USE_LARGE_FACE_BOX: True
         LARGE_BOX_COEF: 1.5
         DETECTION:
           DO_DYNAMIC_DETECTION: False
-          DYNAMIC_DETECTION_FREQUENCY: 30
-          USE_MEDIAN_FACE_BOX: False
+          DYNAMIC_DETECTION_FREQUENCY : 30
+          USE_MEDIAN_FACE_BOX: False    # This should be used ONLY if dynamic detection is used
       RESIZE:
         H: 128
         W: 128
-      DATA_AUG: ["None"]
-      USE_PSUEDO_PPG_LABEL: False
-
 DEVICE: cuda:0
+NUM_OF_GPU_TRAIN: 1
 LOG:
-  PATH: runs/exp_ours
-
+  PATH: runs/expm
 MODEL:
   NAME: FreqSepPhys
-
 INFERENCE:
-  MODEL_PATH: "<MODEL_PATH>/PURE_PURE_UBFC_FreqSepPhys_Epoch4.pth"
   BATCH_SIZE: 4
-  EVALUATION_METHOD: FFT
+  EVALUATION_METHOD: FFT        # "FFT" or "peak detection"
   EVALUATION_WINDOW:
-    USE_SMALLER_WINDOW: False
-    WINDOW_SIZE: 1.6
+    USE_SMALLER_WINDOW: False        # Change this if you'd like an evaluation window smaller than the test video length
+    WINDOW_SIZE: 10        # In seconds
+  MODEL_PATH: "/home/adminroot/zzqcode/rPPG-Toolbox/runs/exp_ours/PURE_SizeW128_SizeH128_ClipLength128_ours/PreTrainedModels/PURE_PURE_UBFC_FreqSepPhys_Epoch4.pth"
