@@ -1,0 +1,38 @@
+[
+  {
+    "before": "摘  要:针对rPPG全频带建模中低频干扰压制心搏分量所引发的频谱混叠与跨域精度退化问题，提出频率分离双流网络FreqSepPhys。该网络在时序编码前以固定权重三维高斯核将特征分解为低频干扰与高频心搏子带，截止频率由生理频带锚定，不随训练域漂移。双向状态空间编码器以O(N)复杂度分别建模两子带心动周期依赖，可逆频率交换层在保持频谱隔离的前提下实现无损跨频融合。在3个公开数据集上的评测表明，PURE域内MAE达0.19 bpm；UBFC-rPPG→MMPD跨域MAE由基线21.44 bpm降至9.77 bpm（降幅54.4%，ρ由−0.003升至0.48）。结果表明，将生理频率先验固化为不可训练算子可同时维持域内精度与跨域鲁棒性。",
+    "after": "摘  要:针对rPPG全频带建模中低频干扰压制心搏分量所引发的频谱混叠与跨域精度退化问题，提出频率分离双流网络FreqSepPhys。该网络在时序编码前以固定权重三维高斯核将特征分解为低频干扰与高频心搏子带，滤波参数跨数据集固定，时间幅频响应由核长、平滑尺度与特征采样率共同决定。双向状态空间编码器以O(N)复杂度分别建模两子带心动周期依赖，可逆频率交换层在保持频谱隔离的前提下实现无损跨频融合。在3个公开数据集上的评测表明，PURE域内MAE达0.19 bpm；UBFC-rPPG→MMPD跨域MAE由基线21.44 bpm降至9.77 bpm（降幅54.4%，ρ由−0.003升至0.48）。结果表明，将生理频率先验固化为不可训练算子可同时维持域内精度与跨域鲁棒性。"
+  },
+  {
+    "before": "Abstract: To address spectral aliasing and cross-domain accuracy degradation arising from low-frequency interference suppressing cardiac components in full-band rPPG modeling, a frequency-separated dual-stream network termed FreqSepPhys is proposed. Fixed-weight 3D Gaussian kernels decompose features into low-frequency interference and high-frequency cardiac sub-bands prior to temporal encoding, with the cut-off frequency anchored to the physiological heart-rate band and thus invariant to training-domain noise. Each sub-band is modeled by a bidirectional state-space encoder with O(N) complexity, and an invertible frequency-exchange layer enables lossless cross-band information fusion while preserving spectral isolation. Evaluations on three public datasets show an intra-domain MAE of 0.19 bpm on PURE; in the UBFC-rPPG→MMPD cross-domain setting, MAE drops from 21.44 bpm (baseline) to 9.77 bpm (a 54.4% reduction) with ρ rising from −0.003 to 0.48. These results demonstrate that solidifying physiological frequency priors into non-trainable operators simultaneously preserves intra-domain accuracy and cross-domain robustness.",
+    "after": "Abstract: To address spectral aliasing and cross-domain accuracy degradation arising from low-frequency interference suppressing cardiac components in full-band rPPG modeling, a frequency-separated dual-stream network termed FreqSepPhys is proposed. Fixed-weight 3D Gaussian kernels decompose features into low-frequency interference and high-frequency cardiac sub-bands prior to temporal encoding, with filter parameters held fixed across datasets; the discrete temporal response is jointly determined by kernel length, Gaussian scale, and feature sampling rate. Each sub-band is modeled by a bidirectional state-space encoder with O(N) complexity, and an invertible frequency-exchange layer enables lossless cross-band information fusion while preserving spectral isolation. Evaluations on three public datasets show an intra-domain MAE of 0.19 bpm on PURE; in the UBFC-rPPG→MMPD cross-domain setting, MAE drops from 21.44 bpm (baseline) to 9.77 bpm (a 54.4% reduction) with ρ rising from −0.003 to 0.48. These results demonstrate that solidifying physiological frequency priors into non-trainable operators simultaneously preserves intra-domain accuracy and cross-domain robustness."
+  },
+  {
+    "before": "FreqSepPhys立足于一项物理事实：干扰与心搏所处频带由成像光学与心血管生理决定，与数据集无关——频谱划分边界不应作为待学习量。据此将三维高斯分解核权重固定，截止频率直接由0.5～3 Hz心搏生理频带给出，并将分解前置到每个特征块内部、时序编码之前。该设计零额外可训练参数、不需域标签与目标域样本，与上述域泛化策略正交且可叠加。",
+    "after": "FreqSepPhys立足于一项物理事实：干扰与心搏所处频带由成像光学与心血管生理决定，与数据集无关——频谱划分边界不应作为待学习量。据此将三维高斯分解核权重固定，时间幅频响应由核长、平滑尺度与分支采样率共同确定，并将分解前置到每个特征块内部、时序编码之前。该设计零额外可训练参数、不需域标签与目标域样本，与上述域泛化策略正交且可叠加。"
+  },
+  {
+    "before": "慢流经ConvBlock4（时间步长4）实现4倍时间压缩，通道数64，串联3个频率分离模块(σdecomp=σlf=1.8)。30 fps输入压缩至约7.5 fps后仍足以刻画低频噪声的时间演化，同时降低后续计算开销。快流经ConvBlock5（时间步长2）实现2倍压缩，通道数32，串联3个频率分离模块(σdecomp=σlf=0.8)，保留15 fps分辨率以捕捉肤色帧间快变，且不施加额外平滑以免损失波形细节。",
+    "after": "慢流经ConvBlock4（时间步长4）实现4倍时间压缩，通道数64，串联3个频率分离模块(σdecomp=σlf=1.8)。30 fps输入压缩至约7.5 fps后仍足以刻画低频噪声的时间演化，同时降低后续计算开销。快流经ConvBlock5（时间步长2）实现2倍压缩，通道数32，串联3个频率分离模块(σdecomp=σlf=0.8)，保留15 fps分辨率以捕捉肤色帧间快变；快流内部的高频路径不施加额外平滑，低频路径仍采用σ=0.8的高斯平滑。"
+  },
+  {
+    "before": "横向连接以1×1×1卷积（时间步长2）将快流时间尺度对齐到慢流，逐元素相加后送入后续模块。融合特征先经SmoothUpsampleBlock（三线性插值加σ=1.0三维高斯平滑）恢复时间分辨率，再做自适应平均池化，最后由SmoothRegHead（9×1×1卷积加σ=1.5一维高斯平滑）回归rPPG波形。平滑仅消除上采样引入的阶梯伪影，对0.5～3 Hz心搏主频衰减较小；回归头σ由验证集网格搜索确定（范围0.5～2.5，步长0.25）。",
+    "after": "横向连接以1×1×1卷积（时间步长2）将快流时间尺度对齐到慢流，逐元素相加后送入后续模块。融合特征先经SmoothUpsampleBlock（三线性插值加σ=1.0三维高斯平滑）恢复时间分辨率，再做自适应平均池化，最后由SmoothRegHead（9×1×1卷积加σ=1.5一维高斯平滑）回归rPPG波形。平滑对不同时间频率具有不同衰减，其作用不能限定为仅消除上采样伪影，分解核的离散响应分析见第2.2.1节；回归头σ由验证集网格搜索确定（范围0.5～2.5，步长0.25）。"
+  },
+  {
+    "before": "频率分离模块FreqSepBlock是本文方法的核心组件，以固定三维高斯滤波器取代可训练残差卷积层，截止频率由生理先验锚定。若该参数可学习，反向传播将驱使滤波响应向训练域噪声谱偏移，导致跨域分解边界失配；固定核权重则从机制上切断该适配通路。",
+    "after": "频率分离模块FreqSepBlock是本文方法的核心组件，在时序编码前采用固定三维高斯核进行平滑与残差分解。固定核权重不参与梯度更新；不同分支的时间响应由核长、平滑尺度及特征采样率共同决定，需按各自时间尺度进行离散频率分析。"
+  },
+  {
+    "before": "低频路径中，xlf依次经时间中心差分卷积(CDC_T，θ=0.5)、批归一化、ReLU、BiMamba编码器、通道注意力（均值与最大池化并联，全连接缩减比16，Sigmoid激活）与高斯平滑层(σ=1.8)；高频路径中xhf经相同编码链但不平滑，以完整保留高频脉动。两路随后经可逆频率交换层完成跨频上下文交换，最终逐元素相加输出ylf⊕yhf，通道数不变。",
+    "after": "低频路径中，xlf依次经时间中心差分卷积(CDC_T，θ=0.5)、批归一化、ReLU、BiMamba编码器、通道注意力（均值与最大池化并联，全连接缩减比16，Sigmoid激活）与高斯平滑层（慢流σ=1.8，快流σ=0.8）；高频路径中xhf经相同编码链但不平滑，以完整保留高频脉动。两路随后经可逆频率交换层完成跨频上下文交换，最终逐元素相加输出ylf⊕yhf，通道数不变。"
+  },
+  {
+    "before": "移除平滑回归头后MAPE由0.17%升至0.31%(+82.4%)。一维高斯平滑(σ=1.5)仅作用于上采样阶梯伪影，在0.5～3 Hz心搏主频处响应基本不变，故该差距可直接归因于阶梯伪影。",
+    "after": "移除平滑回归头后MAPE由0.17%升至0.31%(+82.4%)。一维高斯平滑(σ=1.5)具有频率依赖的衰减，因此该消融结果支持平滑回归头对预测误差的影响，但不能把差距唯一归因于上采样阶梯伪影，也不能据此认为0.5～3 Hz范围内的响应保持不变。"
+  },
+  {
+    "before": "在PURE→UBFC-rPPG场景中，对心动周期准周期性做显式建模的RhythmFormer与RhythmMamba在源域与目标域噪声结构接近时能进一步压低误差；本方法以0.5～3 Hz心搏频带给出的单一固定边界换取跨域稳定性，MAE略高但ρ仍达0.99，波形相关性未受明显影响。需注意Dual-GAN、Contrast-Phys+在UBFC-rPPG域内MAE更低，但其采用留一或顺序划分协议，与本文8∶2随机划分不具直接可比性。",
+    "after": "在PURE→UBFC-rPPG场景中，对心动周期准周期性做显式建模的RhythmFormer与RhythmMamba在源域与目标域噪声结构接近时能进一步压低误差；本方法采用跨数据集固定尺度的高斯分解核，MAE略高但ρ仍达0.99，波形相关性未受明显影响。需注意Dual-GAN、Contrast-Phys+在UBFC-rPPG域内MAE更低，但其采用留一或顺序划分协议，与本文8∶2随机划分不具直接可比性。"
+  }
+]

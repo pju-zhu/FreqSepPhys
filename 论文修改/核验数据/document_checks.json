@@ -1,0 +1,17 @@
+{
+  "original_sha256": "a9317b143485d0ffc61f5e15c451577700104a3e869bb84d43055bf9149a94e3",
+  "original_table_count": 9,
+  "original_table_xml_unchanged": true,
+  "new_editable_equations": 7,
+  "tracked_revisions": 0,
+  "coordinated_paragraph_changes": 9,
+  "basis": "Original manuscript experimental results and method parameters, confirmed by user; frequency/time conversions recomputed.",
+  "branch": "main",
+  "current_docx": "论文修改/频率分离双流网络的非接触式心率检测_修订稿.docx",
+  "current_reply": "论文修改/修改说明.docx",
+  "new_section_heading_keep_with_next": true,
+  "new_equation_numbers_right_tab_aligned": true,
+  "new_inline_symbols_use_real_subscripts": true,
+  "pdf_pages": 9,
+  "pdf_math_color_limitation": "LibreOffice previews equations in black despite DOCX math-run red formatting; verify in Microsoft Word before final submission."
+}
