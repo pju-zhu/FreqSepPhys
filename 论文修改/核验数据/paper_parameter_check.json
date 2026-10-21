@@ -1,5 +1,5 @@
 {
-  "basis": "Parameters as written in current manuscript, K=2ceil(2sigma)+1. Slow kernel9 differs from current FreqSepPhys default kernel5. No assertion that these are the trained-network kernels.",
+  "basis": "Author confirmed that current repository code was modified after the paper; manuscript parameters and experimental results are authoritative. K=2ceil(2sigma)+1, slow K=9, fast K=5. Numerical validation concerns explicitly configured filters, not historical training reproduction.",
   "validation": "Isolated original GaussianLowPass3d class with explicitly supplied manuscript parameters; CPU float32, spatially constant sinusoids, temporal/spatial boundaries excluded; repetitions1,2,3 are pure linear cascades, not FreqSepBlock cascades.",
   "source_sha256": "bb8fb26214284ba56e0571f7e745e6b8f5cf2ddf60dd38eec9f03845bbf267da",
   "results": [
