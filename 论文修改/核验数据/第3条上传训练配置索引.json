@@ -1,0 +1,448 @@
+[
+  {
+    "file": "PURE_PURE_UBFC-rPPG_EFFICIENTPHYS_HF.yaml",
+    "source": "/workspace/attachments/e03751bc-b189-48dc-b7e1-a63aaa82ab0e/PURE_PURE_UBFC-rPPG_EFFICIENTPHYS_HF.yaml",
+    "mode": "train_and_test",
+    "model": {
+      "NAME": "EfficientPhysHF"
+    },
+    "train_filename": "PURE_PURE_UBFC_EfficientPhysHF",
+    "log": {
+      "PATH": "runs/exp_HF"
+    },
+    "data": {
+      "TRAIN": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+        "BEGIN": 0.0,
+        "END": 0.8
+      },
+      "VALID": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+        "BEGIN": 0.8,
+        "END": 1.0
+      },
+      "TEST": {
+        "DATASET": "UBFC-rPPG",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData",
+        "BEGIN": 0.0,
+        "END": 1.0
+      }
+    },
+    "inference": {
+      "BATCH_SIZE": 4,
+      "EVALUATION_METHOD": "FFT",
+      "EVALUATION_WINDOW": {
+        "USE_SMALLER_WINDOW": false,
+        "WINDOW_SIZE": 10
+      },
+      "MODEL_PATH": ""
+    }
+  },
+  {
+    "file": "PURE_PURE_UBFC-rPPG_EFFICIENTPHYS_LF.yaml",
+    "source": "/workspace/attachments/753a0f4b-441c-452e-91da-31fb08034b48/PURE_PURE_UBFC-rPPG_EFFICIENTPHYS_LF.yaml",
+    "mode": "train_and_test",
+    "model": {
+      "NAME": "EfficientPhysLF"
+    },
+    "train_filename": "PURE_PURE_UBFC_EfficientPhysLF",
+    "log": {
+      "PATH": "runs/exp_LF"
+    },
+    "data": {
+      "TRAIN": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+        "BEGIN": 0.0,
+        "END": 0.8
+      },
+      "VALID": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+        "BEGIN": 0.8,
+        "END": 1.0
+      },
+      "TEST": {
+        "DATASET": "UBFC-rPPG",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData",
+        "BEGIN": 0.0,
+        "END": 1.0
+      }
+    },
+    "inference": {
+      "BATCH_SIZE": 4,
+      "EVALUATION_METHOD": "FFT",
+      "EVALUATION_WINDOW": {
+        "USE_SMALLER_WINDOW": false,
+        "WINDOW_SIZE": 10
+      },
+      "MODEL_PATH": ""
+    }
+  },
+  {
+    "file": "PURE_PURE_UBFC-rPPG_EFFICIENTPHYS.yaml",
+    "source": "/workspace/attachments/e0a7225b-e058-4c6f-b3d8-d2298ce7aca8/PURE_PURE_UBFC-rPPG_EFFICIENTPHYS.yaml",
+    "mode": "train_and_test",
+    "model": {
+      "DROP_RATE": 0.2,
+      "NAME": "EfficientPhys",
+      "EFFICIENTPHYS": {
+        "FRAME_DEPTH": 10
+      }
+    },
+    "train_filename": "PURE_PURE_UBFC_efficientphys",
+    "log": {
+      "PATH": "runs/exp0"
+    },
+    "data": {
+      "TRAIN": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData1",
+        "BEGIN": 0.0,
+        "END": 0.8
+      },
+      "VALID": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData1",
+        "BEGIN": 0.8,
+        "END": 1.0
+      },
+      "TEST": {
+        "DATASET": "UBFC-rPPG",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData1",
+        "BEGIN": 0.0,
+        "END": 1.0
+      }
+    },
+    "inference": {
+      "BATCH_SIZE": 4,
+      "EVALUATION_METHOD": "FFT",
+      "EVALUATION_WINDOW": {
+        "USE_SMALLER_WINDOW": false,
+        "WINDOW_SIZE": 10
+      },
+      "MODEL_PATH": ""
+    }
+  },
+  {
+    "file": "PURE_PURE_UBFC-rPPG_EFFICIENTPHYS4.yaml",
+    "source": "/workspace/attachments/2bb89333-de34-4632-81fa-f8d3896cc0a1/PURE_PURE_UBFC-rPPG_EFFICIENTPHYS4.yaml",
+    "mode": "train_and_test",
+    "model": {
+      "NAME": "EfficientPhys4"
+    },
+    "train_filename": "PURE_PURE_UBFC_EfficientPhys4",
+    "log": {
+      "PATH": "runs/expm"
+    },
+    "data": {
+      "TRAIN": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+        "BEGIN": 0.0,
+        "END": 0.8
+      },
+      "VALID": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+        "BEGIN": 0.8,
+        "END": 1.0
+      },
+      "TEST": {
+        "DATASET": "UBFC-rPPG",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData",
+        "BEGIN": 0.0,
+        "END": 1.0
+      }
+    },
+    "inference": {
+      "BATCH_SIZE": 4,
+      "EVALUATION_METHOD": "FFT",
+      "EVALUATION_WINDOW": {
+        "USE_SMALLER_WINDOW": false,
+        "WINDOW_SIZE": 10
+      },
+      "MODEL_PATH": ""
+    }
+  },
+  {
+    "file": "PURE_PURE_UBFC-rPPG_EFFICIENTPHYS2.yaml",
+    "source": "/workspace/attachments/599c3cb9-0b1b-44ff-81b9-2269576d706a/PURE_PURE_UBFC-rPPG_EFFICIENTPHYS2.yaml",
+    "mode": "train_and_test",
+    "model": {
+      "NAME": "EfficientPhys2"
+    },
+    "train_filename": "PURE_PURE_UBFC_EfficientPhys2",
+    "log": {
+      "PATH": "runs/expm"
+    },
+    "data": {
+      "TRAIN": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+        "BEGIN": 0.0,
+        "END": 0.8
+      },
+      "VALID": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+        "BEGIN": 0.8,
+        "END": 1.0
+      },
+      "TEST": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+        "BEGIN": 0.8,
+        "END": 1.0
+      }
+    },
+    "inference": {
+      "BATCH_SIZE": 4,
+      "EVALUATION_METHOD": "FFT",
+      "EVALUATION_WINDOW": {
+        "USE_SMALLER_WINDOW": false,
+        "WINDOW_SIZE": 10
+      },
+      "MODEL_PATH": ""
+    }
+  },
+  {
+    "file": "PURE_PURE_UBFC-rPPG_EFFICIENTPHYS3.yaml",
+    "source": "/workspace/attachments/90a3b1ea-0efd-4397-af77-1e13e45f9e47/PURE_PURE_UBFC-rPPG_EFFICIENTPHYS3.yaml",
+    "mode": "train_and_test",
+    "model": {
+      "NAME": "EfficientPhys3"
+    },
+    "train_filename": "PURE_PURE_UBFC_EfficientPhys3",
+    "log": {
+      "PATH": "runs/expm"
+    },
+    "data": {
+      "TRAIN": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+        "BEGIN": 0.0,
+        "END": 0.8
+      },
+      "VALID": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+        "BEGIN": 0.8,
+        "END": 1.0
+      },
+      "TEST": {
+        "DATASET": "UBFC-rPPG",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData",
+        "BEGIN": 0.0,
+        "END": 1.0
+      }
+    },
+    "inference": {
+      "BATCH_SIZE": 4,
+      "EVALUATION_METHOD": "FFT",
+      "EVALUATION_WINDOW": {
+        "USE_SMALLER_WINDOW": false,
+        "WINDOW_SIZE": 10
+      },
+      "MODEL_PATH": ""
+    }
+  },
+  {
+    "file": "PURE_PURE_UBFC-rPPG_EFFICIENTPHYS5.yaml",
+    "source": "/workspace/attachments/6379f7c3-08f6-4d1d-98d3-4dff11db7403/PURE_PURE_UBFC-rPPG_EFFICIENTPHYS5.yaml",
+    "mode": "train_and_test",
+    "model": {
+      "NAME": "EfficientPhys4"
+    },
+    "train_filename": "MMPD_MMPD_UBFCrPPG_EfficientPhys4",
+    "log": {
+      "PATH": "runs/exp"
+    },
+    "data": {
+      "TRAIN": {
+        "DATASET": "MMPD",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/MMPD/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/MMPD/PreprocessedData",
+        "BEGIN": 0.0,
+        "END": 0.8
+      },
+      "VALID": {
+        "DATASET": "MMPD",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/MMPD/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/MMPD/PreprocessedData",
+        "BEGIN": 0.8,
+        "END": 1.0
+      },
+      "TEST": {
+        "DATASET": "UBFC-rPPG",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData",
+        "BEGIN": 0.0,
+        "END": 1.0
+      }
+    },
+    "inference": {
+      "BATCH_SIZE": 4,
+      "EVALUATION_METHOD": "FFT",
+      "EVALUATION_WINDOW": {
+        "USE_SMALLER_WINDOW": false,
+        "WINDOW_SIZE": 10
+      },
+      "MODEL_PATH": ""
+    }
+  },
+  {
+    "file": "PURE_PURE_UBFC-rPPG_FreqSepPhys.yaml",
+    "source": "/workspace/attachments/4dd7ad86-6d6b-4284-9a5d-69345cb9676c/PURE_PURE_UBFC-rPPG_FreqSepPhys.yaml",
+    "mode": "train_and_test",
+    "model": {
+      "NAME": "FreqSepPhys"
+    },
+    "train_filename": "PURE_PURE_UBFC_FreqSepPhys",
+    "log": {
+      "PATH": "runs/exp_ours"
+    },
+    "data": {
+      "TRAIN": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+        "BEGIN": 0.0,
+        "END": 0.8
+      },
+      "VALID": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+        "BEGIN": 0.8,
+        "END": 1.0
+      },
+      "TEST": {
+        "DATASET": "PURE",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+        "BEGIN": 0.8,
+        "END": 1.0
+      }
+    },
+    "inference": {
+      "BATCH_SIZE": 4,
+      "EVALUATION_METHOD": "FFT",
+      "EVALUATION_WINDOW": {
+        "USE_SMALLER_WINDOW": false,
+        "WINDOW_SIZE": 10
+      },
+      "MODEL_PATH": ""
+    }
+  },
+  {
+    "file": "UBFC-rPPG_UBFC-rPPG_MMPD_EFFICIENTPHYS.yaml",
+    "source": "/workspace/attachments/e1ad4df4-2e1b-42d8-9dc0-397efef457ea/UBFC-rPPG_UBFC-rPPG_MMPD_EFFICIENTPHYS.yaml",
+    "mode": "train_and_test",
+    "model": {
+      "DROP_RATE": 0.2,
+      "NAME": "EfficientPhys"
+    },
+    "train_filename": "UBFC_MMPD_EfficientPhys",
+    "log": {
+      "PATH": "runs/exp_000"
+    },
+    "data": {
+      "TRAIN": {
+        "DATASET": "UBFC-rPPG",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData0",
+        "BEGIN": 0.0,
+        "END": 0.8
+      },
+      "VALID": {
+        "DATASET": "UBFC-rPPG",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData0",
+        "BEGIN": 0.8,
+        "END": 1.0
+      },
+      "TEST": {
+        "DATASET": "MMPD",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/MMPD/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/MMPD/PreprocessedData0",
+        "BEGIN": 0.0,
+        "END": 1.0
+      }
+    },
+    "inference": {
+      "BATCH_SIZE": 4,
+      "EVALUATION_METHOD": "FFT",
+      "EVALUATION_WINDOW": {
+        "USE_SMALLER_WINDOW": false,
+        "WINDOW_SIZE": 10
+      },
+      "MODEL_PATH": ""
+    }
+  },
+  {
+    "file": "UBFC-rPPG_UBFC-rPPG_MMPD_EFFICIENTPHYS4.yaml",
+    "source": "/workspace/attachments/f2c7d75b-9d15-4faf-b7f3-e32d1141043c/UBFC-rPPG_UBFC-rPPG_MMPD_EFFICIENTPHYS4.yaml",
+    "mode": "train_and_test",
+    "model": {
+      "DROP_RATE": 0.2,
+      "NAME": "EfficientPhys4"
+    },
+    "train_filename": "UBFC_MMPD_EfficientPhys4",
+    "log": {
+      "PATH": "runs/exp_4"
+    },
+    "data": {
+      "TRAIN": {
+        "DATASET": "UBFC-rPPG",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData",
+        "BEGIN": 0.0,
+        "END": 0.8
+      },
+      "VALID": {
+        "DATASET": "UBFC-rPPG",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData",
+        "BEGIN": 0.8,
+        "END": 1.0
+      },
+      "TEST": {
+        "DATASET": "MMPD",
+        "DATA_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/MMPD/RawData",
+        "CACHED_PATH": "/home/adminroot/zzqcode/rPPG-Toolbox/data/MMPD/PreprocessedData",
+        "BEGIN": 0.0,
+        "END": 1.0
+      }
+    },
+    "inference": {
+      "BATCH_SIZE": 4,
+      "EVALUATION_METHOD": "FFT",
+      "EVALUATION_WINDOW": {
+        "USE_SMALLER_WINDOW": false,
+        "WINDOW_SIZE": 10
+      },
+      "MODEL_PATH": ""
+    }
+  }
+]

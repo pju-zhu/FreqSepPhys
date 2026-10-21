@@ -27,12 +27,12 @@
 
 ## 参数依据与复算
 
-按作者确认的现稿参数：慢流σ=1.8、K=9、Fs=7.5 Hz；快流σ=0.8、K=5、Fs=15 Hz。作者已确认当前代码经过后续修改，因此以论文参数作为原实验的方法依据，不再将代码差异列为待核实问题。算子测试显式传入论文参数，用于验证频率计算，不是历史训练复现。
+作者已确认论文评测采用原训练Epoch4检查点。核缓冲区核验结果：慢流σ=1.8、K=5、Fs=7.5 Hz；快流σ=0.8、K=5、Fs=15 Hz。此前稿件推导出的慢流9点核已纠正。当前正文、回复和图2均已按原实验核更新，原实验表格保持不变。详见[Epoch4确认后的第2条修订](专项材料/Epoch4确认后的第2条修订.md)。
 
 在仓库根目录运行：
 
 ```bash
-/workspace/venvs/freqsepphys/bin/python 论文修改/脚本/check_paper_parameters.py
+/workspace/venvs/freqsepphys/bin/python 论文修改/脚本/check_paper_parameters.py --checkpoint /实际路径/PURE_PURE_UBFC_FreqSepPhys_Epoch4.pth
 python 论文修改/脚本/plot_paper_response.py
 ```
 

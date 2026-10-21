@@ -1,0 +1,156 @@
+[
+  {
+    "file": "PURE_PURE_EFFICIENTPHYS4.yaml",
+    "model": "EfficientPhys4",
+    "mode": "only_test",
+    "weights": "/home/adminroot/zzqcode/rPPG-Toolbox/runs/expm/PURE_SizeW128_SizeH128_ClipLength128_DataTypeDiffNormalized_DataAugNone_LabelTypeDiffNormalized_Crop_faceTrue_BackendHC_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse/PreTrainedModels/PURE_PURE_UBFC_EfficientPhys4_Epoch11.pth",
+    "dataset": "PURE",
+    "data": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+    "cache": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+    "begin": 0.8,
+    "end": 1.0
+  },
+  {
+    "file": "PURE_PURE_EFFICIENTPHYS.yaml",
+    "model": "EfficientPhys",
+    "mode": "only_test",
+    "weights": "/home/adminroot/zzqcode/rPPG-Toolbox/runs/exp/PURE_SizeW72_SizeH72_ClipLength180_DataTypeStandardized_DataAugNone_LabelTypeDiffNormalized_Crop_faceTrue_BackendHC_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse/PreTrainedModels/PURE_PURE_UBFC_efficientphys_Epoch29.pth",
+    "dataset": "PURE",
+    "data": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+    "cache": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+    "begin": 0.8,
+    "end": 1.0
+  },
+  {
+    "file": "PURE_PURE_UBFC-rPPG_EFFICIENTPHYS_LF.yaml",
+    "model": "EfficientPhysLF",
+    "mode": "only_test",
+    "weights": "/home/adminroot/zzqcode/rPPG-Toolbox/runs/exp_LF/PURE_SizeW128_SizeH128_ClipLength128_DataTypeDiffNormalized_DataAugNone_LabelTypeDiffNormalized_Crop_faceTrue_BackendHC_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse/PreTrainedModels/PURE_PURE_UBFC_EfficientPhysLF_Epoch29.pth",
+    "dataset": "UBFC-rPPG",
+    "data": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+    "cache": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData",
+    "begin": 0.0,
+    "end": 1.0
+  },
+  {
+    "file": "PURE_UBFC-rPPG_EFFICIENTPHYS2.yaml",
+    "model": "EfficientPhys2",
+    "mode": "only_test",
+    "weights": "/home/adminroot/zzqcode/rPPG-Toolbox/runs/exp_ours2/E2/PreTrainedModels/PURE_PURE_UBFC_EfficientPhys2_best.pth",
+    "dataset": "UBFC-rPPG",
+    "data": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+    "cache": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData",
+    "begin": 0.0,
+    "end": 1.0
+  },
+  {
+    "file": "PURE_UBFC-rPPG_EFFICIENTPHYS.yaml",
+    "model": "EfficientPhys",
+    "mode": "only_test",
+    "weights": "/home/adminroot/zzqcode/rPPG-Toolbox/runs/exp/PURE_SizeW72_SizeH72_ClipLength180_DataTypeStandardized_DataAugNone_LabelTypeDiffNormalized_Crop_faceTrue_BackendHC_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse/PreTrainedModels/PURE_PURE_UBFC_efficientphys_Epoch29.pth",
+    "dataset": "UBFC-rPPG",
+    "data": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+    "cache": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData",
+    "begin": 0.0,
+    "end": 1.0
+  },
+  {
+    "file": "PURE_PURE_EFFICIENTPHYS3.yaml",
+    "model": "EfficientPhys3",
+    "mode": "only_test",
+    "weights": "/home/adminroot/zzqcode/rPPG-Toolbox/runs/expm/PURE_SizeW128_SizeH128_ClipLength128_DataTypeDiffNormalized_DataAugNone_LabelTypeDiffNormalized_Crop_faceTrue_BackendHC_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse/PreTrainedModels/PURE_PURE_UBFC_EfficientPhys3_Epoch15.pth",
+    "dataset": "PURE",
+    "data": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+    "cache": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+    "begin": 0.8,
+    "end": 1.0
+  },
+  {
+    "file": "PURE_PURE_EFFICIENTPHYS5.yaml",
+    "model": "EfficientPhys5",
+    "mode": "only_test",
+    "weights": "/home/adminroot/zzqcode/rPPG-Toolbox/runs/expm/PURE_SizeW128_SizeH128_ClipLength128_DataTypeDiffNormalized_DataAugNone_LabelTypeDiffNormalized_Crop_faceTrue_BackendHC_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse/PreTrainedModels/PURE_PURE_UBFC_EfficientPhys5_Epoch30.pth",
+    "dataset": "PURE",
+    "data": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+    "cache": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+    "begin": 0.8,
+    "end": 1.0
+  },
+  {
+    "file": "PURE_UBFC-rPPG_EFFICIENTPHYS3.yaml",
+    "model": "EfficientPhys3",
+    "mode": "only_test",
+    "weights": "/home/adminroot/zzqcode/rPPG-Toolbox/runs/expm/PURE_SizeW128_SizeH128_ClipLength128_DataTypeDiffNormalized_DataAugNone_LabelTypeDiffNormalized_Crop_faceTrue_BackendHC_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse/PreTrainedModels/PURE_PURE_UBFC_EfficientPhys3_Epoch19.pth",
+    "dataset": "UBFC-rPPG",
+    "data": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+    "cache": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData",
+    "begin": 0.0,
+    "end": 1.0
+  },
+  {
+    "file": "PURE_UBFC-rPPG_EFFICIENTPHYS4.yaml",
+    "model": "EfficientPhys4",
+    "mode": "only_test",
+    "weights": "/home/adminroot/zzqcode/rPPG-Toolbox/runs/expm/PURE_SizeW128_SizeH128_ClipLength128_DataTypeDiffNormalized_DataAugNone_LabelTypeDiffNormalized_Crop_faceTrue_BackendHC_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse/PreTrainedModels/PURE_PURE_UBFC_EfficientPhys4_Epoch29.pth",
+    "dataset": "UBFC-rPPG",
+    "data": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+    "cache": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData",
+    "begin": 0.0,
+    "end": 1.0
+  },
+  {
+    "file": "PURE_UBFC-rPPG_FreqSepPhys.yaml",
+    "model": "FreqSepPhys",
+    "mode": "only_test",
+    "weights": "/home/adminroot/zzqcode/rPPG-Toolbox/runs/exp_ours/PURE_SizeW128_SizeH128_ClipLength128_ours/PreTrainedModels/PURE_PURE_UBFC_FreqSepPhys_Epoch4.pth",
+    "dataset": "UBFC-rPPG",
+    "data": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+    "cache": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData",
+    "begin": 0.0,
+    "end": 1.0
+  },
+  {
+    "file": "PURE_PURE_EFFICIENTPHYS2.yaml",
+    "model": "EfficientPhys2",
+    "mode": "only_test",
+    "weights": "/home/adminroot/zzqcode/rPPG-Toolbox/runs/exp_ours2/E2/PreTrainedModels/PURE_PURE_UBFC_EfficientPhys2_best.pth",
+    "dataset": "PURE",
+    "data": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+    "cache": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+    "begin": 0.8,
+    "end": 1.0
+  },
+  {
+    "file": "PURE_PURE_UBFC-rPPG_EFFICIENTPHYS_HF.yaml",
+    "model": "EfficientPhysHF",
+    "mode": "only_test",
+    "weights": "/home/adminroot/zzqcode/rPPG-Toolbox/runs/exp_HF/PURE_SizeW128_SizeH128_ClipLength128_DataTypeDiffNormalized_DataAugNone_LabelTypeDiffNormalized_Crop_faceTrue_BackendHC_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse/PreTrainedModels/PURE_PURE_UBFC_EfficientPhysHF_Epoch29.pth",
+    "dataset": "UBFC-rPPG",
+    "data": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/RawData",
+    "cache": "/home/adminroot/zzqcode/rPPG-Toolbox/data/UBFC-rPPG/PreprocessedData",
+    "begin": 0.0,
+    "end": 1.0
+  },
+  {
+    "file": "PURE_PURE_FreqSepPhys.yaml",
+    "model": "FreqSepPhys",
+    "mode": "only_test",
+    "weights": "/home/adminroot/zzqcode/rPPG-Toolbox/runs/exp_ours/PURE_SizeW128_SizeH128_ClipLength128_ours/PreTrainedModels/PURE_PURE_UBFC_FreqSepPhys_Epoch4.pth",
+    "dataset": "PURE",
+    "data": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/RawData",
+    "cache": "/home/adminroot/zzqcode/rPPG-Toolbox/data/PURE/PreprocessedData",
+    "begin": 0.8,
+    "end": 1.0
+  },
+  {
+    "file": "UBFC-rPPG_UBFC-rPPG_MMPD_EFFICIENTPHYS4.yaml",
+    "model": "EfficientPhys4",
+    "mode": "only_test",
+    "weights": "/home/adminroot/zzqcode/rPPG-Toolbox/runs/expm/PURE_SizeW128_SizeH128_ClipLength128_DataTypeDiffNormalized_DataAugNone_LabelTypeDiffNormalized_Crop_faceTrue_BackendHC_Large_boxTrue_Large_size1.5_Dyamic_DetFalse_det_len30_Median_face_boxFalse/PreTrainedModels/PURE_PURE_UBFC_EfficientPhys4_Epoch29.pth",
+    "dataset": "MMPD",
+    "data": "/home/adminroot/zzqcode/rPPG-Toolbox/data/MMPD/RawData",
+    "cache": "/home/adminroot/zzqcode/rPPG-Toolbox/data/MMPD/PreprocessedData",
+    "begin": 0.0,
+    "end": 1.0
+  }
+]

@@ -25,7 +25,7 @@ for col,x in enumerate(r['results']):
         gain=.5 if marker=='s' else np.sqrt(.5)
         ax.plot(value,gain,marker,color='black',ms=4)
         ax.annotate(f'{label}: {value:.3f} Hz',(value,gain),xytext=(9,-14 if marker=='s' else 10),textcoords='offset points',fontsize=8)
-    ax.set(title=f'({chr(97+col)}) {x["stream"]}：K={K}，σ={x["sigma"]}，采样率{fs:g} Hz',xlabel='时间频率 / Hz',ylabel='幅值比',ylim=(0,1.13),xlim=(0,fs/2))
+    ax.set(title=f'({chr(97+col)}) {x["stream"]}：K={K}，σ={x["sigma"]}，采样率{fs:g} Hz',xlabel='时间频率 / Hz',ylabel='幅值比',ylim=(0,max(1.13,float(np.max(np.abs(1-H)))*1.08)),xlim=(0,fs/2))
     ax.legend(loc='upper right',fontsize=8);ax.grid(alpha=.18)
     ax=axs[1,col]
     for m,style in [(1,'-'),(2,'--'),(3,'-.'),(6,':')]:

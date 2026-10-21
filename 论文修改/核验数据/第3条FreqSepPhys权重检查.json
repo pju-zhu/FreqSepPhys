@@ -1,0 +1,4834 @@
+[
+  {
+    "file": "PURE_PURE_UBFC_FreqSepPhys_Epoch4.pth",
+    "sha256": "42ee1434a3162e6e4ef3892e7dd4fbb00d4eb4565fe7000df71aed24d0c8ceba",
+    "entries": 558,
+    "tensor_elements": 2804660,
+    "groups": {
+      "mamba": 288,
+      "freq": 90,
+      "F_net": 42,
+      "G_net": 42
+    },
+    "kernels": {
+      "module.ConvBlock6.lowpass.kernel": {
+        "shape": [
+          32,
+          1,
+          3,
+          3,
+          3
+        ],
+        "sum_first": 1.000000238418579,
+        "centerline": [
+          0.0651249885559082,
+          0.1422460526227951,
+          0.0651249885559082
+        ]
+      },
+      "module.Block1.freq_decomposer.lowpass_filter.kernel": {
+        "shape": [
+          64,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 0.9999997615814209,
+        "centerline": [
+          0.009886304847896099,
+          0.01570711098611355,
+          0.01832808367908001,
+          0.01570711098611355,
+          0.009886304847896099
+        ]
+      },
+      "module.Block1.lowpass_lf.kernel": {
+        "shape": [
+          64,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 0.9999997615814209,
+        "centerline": [
+          0.009886304847896099,
+          0.01570711098611355,
+          0.01832808367908001,
+          0.01570711098611355,
+          0.009886304847896099
+        ]
+      },
+      "module.Block2.freq_decomposer.lowpass_filter.kernel": {
+        "shape": [
+          64,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 0.9999997615814209,
+        "centerline": [
+          0.009886304847896099,
+          0.01570711098611355,
+          0.01832808367908001,
+          0.01570711098611355,
+          0.009886304847896099
+        ]
+      },
+      "module.Block2.lowpass_lf.kernel": {
+        "shape": [
+          64,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 0.9999997615814209,
+        "centerline": [
+          0.009886304847896099,
+          0.01570711098611355,
+          0.01832808367908001,
+          0.01570711098611355,
+          0.009886304847896099
+        ]
+      },
+      "module.Block3.freq_decomposer.lowpass_filter.kernel": {
+        "shape": [
+          64,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 0.9999997615814209,
+        "centerline": [
+          0.009886304847896099,
+          0.01570711098611355,
+          0.01832808367908001,
+          0.01570711098611355,
+          0.009886304847896099
+        ]
+      },
+      "module.Block3.lowpass_lf.kernel": {
+        "shape": [
+          64,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 0.9999997615814209,
+        "centerline": [
+          0.009886304847896099,
+          0.01570711098611355,
+          0.01832808367908001,
+          0.01570711098611355,
+          0.009886304847896099
+        ]
+      },
+      "module.Block4.freq_decomposer.lowpass_filter.kernel": {
+        "shape": [
+          32,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0,
+        "centerline": [
+          0.005463052075356245,
+          0.05692630633711815,
+          0.12433848530054092,
+          0.05692630633711815,
+          0.005463052075356245
+        ]
+      },
+      "module.Block4.lowpass_lf.kernel": {
+        "shape": [
+          32,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0,
+        "centerline": [
+          0.005463052075356245,
+          0.05692630633711815,
+          0.12433848530054092,
+          0.05692630633711815,
+          0.005463052075356245
+        ]
+      },
+      "module.Block5.freq_decomposer.lowpass_filter.kernel": {
+        "shape": [
+          32,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0,
+        "centerline": [
+          0.005463052075356245,
+          0.05692630633711815,
+          0.12433848530054092,
+          0.05692630633711815,
+          0.005463052075356245
+        ]
+      },
+      "module.Block5.lowpass_lf.kernel": {
+        "shape": [
+          32,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0,
+        "centerline": [
+          0.005463052075356245,
+          0.05692630633711815,
+          0.12433848530054092,
+          0.05692630633711815,
+          0.005463052075356245
+        ]
+      },
+      "module.Block6.freq_decomposer.lowpass_filter.kernel": {
+        "shape": [
+          32,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0,
+        "centerline": [
+          0.005463052075356245,
+          0.05692630633711815,
+          0.12433848530054092,
+          0.05692630633711815,
+          0.005463052075356245
+        ]
+      },
+      "module.Block6.lowpass_lf.kernel": {
+        "shape": [
+          32,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0,
+        "centerline": [
+          0.005463052075356245,
+          0.05692630633711815,
+          0.12433848530054092,
+          0.05692630633711815,
+          0.005463052075356245
+        ]
+      },
+      "module.upsample1.lowpass.kernel": {
+        "shape": [
+          64,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0000001192092896,
+        "centerline": [
+          0.008832770399749279,
+          0.03958573192358017,
+          0.06526583433151245,
+          0.03958573192358017,
+          0.008832770399749279
+        ]
+      },
+      "module.upsample2.lowpass.kernel": {
+        "shape": [
+          48,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0000001192092896,
+        "centerline": [
+          0.008832770399749279,
+          0.03958573192358017,
+          0.06526583433151245,
+          0.03958573192358017,
+          0.008832770399749279
+        ]
+      },
+      "module.ConvBlockLast.lowpass.kernel": {
+        "shape": [
+          1,
+          1,
+          9,
+          9,
+          9
+        ],
+        "sum_first": 1.0,
+        "centerline": [
+          0.0005410366575233638,
+          0.0025632791221141815,
+          0.007786554284393787,
+          0.015166136436164379,
+          0.018940214067697525,
+          0.015166136436164379,
+          0.007786554284393787,
+          0.0025632791221141815,
+          0.0005410366575233638
+        ]
+      }
+    },
+    "keys_shapes": {
+      "module.ConvBlock1.0.weight": [
+        16,
+        3,
+        1,
+        5,
+        5
+      ],
+      "module.ConvBlock1.0.bias": [
+        16
+      ],
+      "module.ConvBlock1.1.weight": [
+        16
+      ],
+      "module.ConvBlock1.1.bias": [
+        16
+      ],
+      "module.ConvBlock1.1.running_mean": [
+        16
+      ],
+      "module.ConvBlock1.1.running_var": [
+        16
+      ],
+      "module.ConvBlock1.1.num_batches_tracked": [],
+      "module.ConvBlock2.0.weight": [
+        32,
+        16,
+        3,
+        3,
+        3
+      ],
+      "module.ConvBlock2.0.bias": [
+        32
+      ],
+      "module.ConvBlock2.1.weight": [
+        32
+      ],
+      "module.ConvBlock2.1.bias": [
+        32
+      ],
+      "module.ConvBlock2.1.running_mean": [
+        32
+      ],
+      "module.ConvBlock2.1.running_var": [
+        32
+      ],
+      "module.ConvBlock2.1.num_batches_tracked": [],
+      "module.ConvBlock3.0.weight": [
+        64,
+        32,
+        3,
+        3,
+        3
+      ],
+      "module.ConvBlock3.0.bias": [
+        64
+      ],
+      "module.ConvBlock3.1.weight": [
+        64
+      ],
+      "module.ConvBlock3.1.bias": [
+        64
+      ],
+      "module.ConvBlock3.1.running_mean": [
+        64
+      ],
+      "module.ConvBlock3.1.running_var": [
+        64
+      ],
+      "module.ConvBlock3.1.num_batches_tracked": [],
+      "module.ConvBlock4.0.weight": [
+        64,
+        64,
+        4,
+        1,
+        1
+      ],
+      "module.ConvBlock4.0.bias": [
+        64
+      ],
+      "module.ConvBlock4.1.weight": [
+        64
+      ],
+      "module.ConvBlock4.1.bias": [
+        64
+      ],
+      "module.ConvBlock4.1.running_mean": [
+        64
+      ],
+      "module.ConvBlock4.1.running_var": [
+        64
+      ],
+      "module.ConvBlock4.1.num_batches_tracked": [],
+      "module.ConvBlock5.0.weight": [
+        32,
+        64,
+        2,
+        1,
+        1
+      ],
+      "module.ConvBlock5.0.bias": [
+        32
+      ],
+      "module.ConvBlock5.1.weight": [
+        32
+      ],
+      "module.ConvBlock5.1.bias": [
+        32
+      ],
+      "module.ConvBlock5.1.running_mean": [
+        32
+      ],
+      "module.ConvBlock5.1.running_var": [
+        32
+      ],
+      "module.ConvBlock5.1.num_batches_tracked": [],
+      "module.ConvBlock6.conv.weight": [
+        32,
+        32,
+        3,
+        1,
+        1
+      ],
+      "module.ConvBlock6.conv.bias": [
+        32
+      ],
+      "module.ConvBlock6.bn.weight": [
+        32
+      ],
+      "module.ConvBlock6.bn.bias": [
+        32
+      ],
+      "module.ConvBlock6.bn.running_mean": [
+        32
+      ],
+      "module.ConvBlock6.bn.running_var": [
+        32
+      ],
+      "module.ConvBlock6.bn.num_batches_tracked": [],
+      "module.ConvBlock6.lowpass.kernel": [
+        32,
+        1,
+        3,
+        3,
+        3
+      ],
+      "module.Block1.freq_decomposer.lowpass_filter.kernel": [
+        64,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block1.cdc_lf.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "module.Block1.bn_lf.weight": [
+        64
+      ],
+      "module.Block1.bn_lf.bias": [
+        64
+      ],
+      "module.Block1.bn_lf.running_mean": [
+        64
+      ],
+      "module.Block1.bn_lf.running_var": [
+        64
+      ],
+      "module.Block1.bn_lf.num_batches_tracked": [],
+      "module.Block1.mamba_lf.alpha": [
+        1
+      ],
+      "module.Block1.mamba_lf.beta": [
+        1
+      ],
+      "module.Block1.mamba_lf.norm1.weight": [
+        64
+      ],
+      "module.Block1.mamba_lf.norm1.bias": [
+        64
+      ],
+      "module.Block1.mamba_lf.norm2.weight": [
+        64
+      ],
+      "module.Block1.mamba_lf.norm2.bias": [
+        64
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.D": [
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.conv1d.bias": [
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.D": [
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.conv1d.bias": [
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block1.gating_lf.fc.0.weight": [
+        32,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block1.gating_lf.fc.2.weight": [
+        64,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block1.lowpass_lf.kernel": [
+        64,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block1.cdc_hf.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "module.Block1.bn_hf.weight": [
+        64
+      ],
+      "module.Block1.bn_hf.bias": [
+        64
+      ],
+      "module.Block1.bn_hf.running_mean": [
+        64
+      ],
+      "module.Block1.bn_hf.running_var": [
+        64
+      ],
+      "module.Block1.bn_hf.num_batches_tracked": [],
+      "module.Block1.mamba_hf.alpha": [
+        1
+      ],
+      "module.Block1.mamba_hf.beta": [
+        1
+      ],
+      "module.Block1.mamba_hf.norm1.weight": [
+        64
+      ],
+      "module.Block1.mamba_hf.norm1.bias": [
+        64
+      ],
+      "module.Block1.mamba_hf.norm2.weight": [
+        64
+      ],
+      "module.Block1.mamba_hf.norm2.bias": [
+        64
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.D": [
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.conv1d.bias": [
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.D": [
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.conv1d.bias": [
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block1.gating_hf.fc.0.weight": [
+        32,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block1.gating_hf.fc.2.weight": [
+        64,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block1.freq_exchange.F_net.0.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block1.freq_exchange.F_net.1.weight": [
+        64
+      ],
+      "module.Block1.freq_exchange.F_net.1.bias": [
+        64
+      ],
+      "module.Block1.freq_exchange.F_net.1.running_mean": [
+        64
+      ],
+      "module.Block1.freq_exchange.F_net.1.running_var": [
+        64
+      ],
+      "module.Block1.freq_exchange.F_net.1.num_batches_tracked": [],
+      "module.Block1.freq_exchange.F_net.3.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block1.freq_exchange.G_net.0.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block1.freq_exchange.G_net.1.weight": [
+        64
+      ],
+      "module.Block1.freq_exchange.G_net.1.bias": [
+        64
+      ],
+      "module.Block1.freq_exchange.G_net.1.running_mean": [
+        64
+      ],
+      "module.Block1.freq_exchange.G_net.1.running_var": [
+        64
+      ],
+      "module.Block1.freq_exchange.G_net.1.num_batches_tracked": [],
+      "module.Block1.freq_exchange.G_net.3.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.freq_decomposer.lowpass_filter.kernel": [
+        64,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block2.cdc_lf.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "module.Block2.bn_lf.weight": [
+        64
+      ],
+      "module.Block2.bn_lf.bias": [
+        64
+      ],
+      "module.Block2.bn_lf.running_mean": [
+        64
+      ],
+      "module.Block2.bn_lf.running_var": [
+        64
+      ],
+      "module.Block2.bn_lf.num_batches_tracked": [],
+      "module.Block2.mamba_lf.alpha": [
+        1
+      ],
+      "module.Block2.mamba_lf.beta": [
+        1
+      ],
+      "module.Block2.mamba_lf.norm1.weight": [
+        64
+      ],
+      "module.Block2.mamba_lf.norm1.bias": [
+        64
+      ],
+      "module.Block2.mamba_lf.norm2.weight": [
+        64
+      ],
+      "module.Block2.mamba_lf.norm2.bias": [
+        64
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.D": [
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.conv1d.bias": [
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.D": [
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.conv1d.bias": [
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block2.gating_lf.fc.0.weight": [
+        32,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.gating_lf.fc.2.weight": [
+        64,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.lowpass_lf.kernel": [
+        64,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block2.cdc_hf.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "module.Block2.bn_hf.weight": [
+        64
+      ],
+      "module.Block2.bn_hf.bias": [
+        64
+      ],
+      "module.Block2.bn_hf.running_mean": [
+        64
+      ],
+      "module.Block2.bn_hf.running_var": [
+        64
+      ],
+      "module.Block2.bn_hf.num_batches_tracked": [],
+      "module.Block2.mamba_hf.alpha": [
+        1
+      ],
+      "module.Block2.mamba_hf.beta": [
+        1
+      ],
+      "module.Block2.mamba_hf.norm1.weight": [
+        64
+      ],
+      "module.Block2.mamba_hf.norm1.bias": [
+        64
+      ],
+      "module.Block2.mamba_hf.norm2.weight": [
+        64
+      ],
+      "module.Block2.mamba_hf.norm2.bias": [
+        64
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.D": [
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.conv1d.bias": [
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.D": [
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.conv1d.bias": [
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block2.gating_hf.fc.0.weight": [
+        32,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.gating_hf.fc.2.weight": [
+        64,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.freq_exchange.F_net.0.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.freq_exchange.F_net.1.weight": [
+        64
+      ],
+      "module.Block2.freq_exchange.F_net.1.bias": [
+        64
+      ],
+      "module.Block2.freq_exchange.F_net.1.running_mean": [
+        64
+      ],
+      "module.Block2.freq_exchange.F_net.1.running_var": [
+        64
+      ],
+      "module.Block2.freq_exchange.F_net.1.num_batches_tracked": [],
+      "module.Block2.freq_exchange.F_net.3.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.freq_exchange.G_net.0.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.freq_exchange.G_net.1.weight": [
+        64
+      ],
+      "module.Block2.freq_exchange.G_net.1.bias": [
+        64
+      ],
+      "module.Block2.freq_exchange.G_net.1.running_mean": [
+        64
+      ],
+      "module.Block2.freq_exchange.G_net.1.running_var": [
+        64
+      ],
+      "module.Block2.freq_exchange.G_net.1.num_batches_tracked": [],
+      "module.Block2.freq_exchange.G_net.3.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.freq_decomposer.lowpass_filter.kernel": [
+        64,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block3.cdc_lf.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "module.Block3.bn_lf.weight": [
+        64
+      ],
+      "module.Block3.bn_lf.bias": [
+        64
+      ],
+      "module.Block3.bn_lf.running_mean": [
+        64
+      ],
+      "module.Block3.bn_lf.running_var": [
+        64
+      ],
+      "module.Block3.bn_lf.num_batches_tracked": [],
+      "module.Block3.mamba_lf.alpha": [
+        1
+      ],
+      "module.Block3.mamba_lf.beta": [
+        1
+      ],
+      "module.Block3.mamba_lf.norm1.weight": [
+        64
+      ],
+      "module.Block3.mamba_lf.norm1.bias": [
+        64
+      ],
+      "module.Block3.mamba_lf.norm2.weight": [
+        64
+      ],
+      "module.Block3.mamba_lf.norm2.bias": [
+        64
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.D": [
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.conv1d.bias": [
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.D": [
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.conv1d.bias": [
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block3.gating_lf.fc.0.weight": [
+        32,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.gating_lf.fc.2.weight": [
+        64,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.lowpass_lf.kernel": [
+        64,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block3.cdc_hf.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "module.Block3.bn_hf.weight": [
+        64
+      ],
+      "module.Block3.bn_hf.bias": [
+        64
+      ],
+      "module.Block3.bn_hf.running_mean": [
+        64
+      ],
+      "module.Block3.bn_hf.running_var": [
+        64
+      ],
+      "module.Block3.bn_hf.num_batches_tracked": [],
+      "module.Block3.mamba_hf.alpha": [
+        1
+      ],
+      "module.Block3.mamba_hf.beta": [
+        1
+      ],
+      "module.Block3.mamba_hf.norm1.weight": [
+        64
+      ],
+      "module.Block3.mamba_hf.norm1.bias": [
+        64
+      ],
+      "module.Block3.mamba_hf.norm2.weight": [
+        64
+      ],
+      "module.Block3.mamba_hf.norm2.bias": [
+        64
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.D": [
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.conv1d.bias": [
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.D": [
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.conv1d.bias": [
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block3.gating_hf.fc.0.weight": [
+        32,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.gating_hf.fc.2.weight": [
+        64,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.freq_exchange.F_net.0.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.freq_exchange.F_net.1.weight": [
+        64
+      ],
+      "module.Block3.freq_exchange.F_net.1.bias": [
+        64
+      ],
+      "module.Block3.freq_exchange.F_net.1.running_mean": [
+        64
+      ],
+      "module.Block3.freq_exchange.F_net.1.running_var": [
+        64
+      ],
+      "module.Block3.freq_exchange.F_net.1.num_batches_tracked": [],
+      "module.Block3.freq_exchange.F_net.3.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.freq_exchange.G_net.0.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.freq_exchange.G_net.1.weight": [
+        64
+      ],
+      "module.Block3.freq_exchange.G_net.1.bias": [
+        64
+      ],
+      "module.Block3.freq_exchange.G_net.1.running_mean": [
+        64
+      ],
+      "module.Block3.freq_exchange.G_net.1.running_var": [
+        64
+      ],
+      "module.Block3.freq_exchange.G_net.1.num_batches_tracked": [],
+      "module.Block3.freq_exchange.G_net.3.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.freq_decomposer.lowpass_filter.kernel": [
+        32,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block4.cdc_lf.conv.weight": [
+        32,
+        32,
+        3,
+        3,
+        3
+      ],
+      "module.Block4.bn_lf.weight": [
+        32
+      ],
+      "module.Block4.bn_lf.bias": [
+        32
+      ],
+      "module.Block4.bn_lf.running_mean": [
+        32
+      ],
+      "module.Block4.bn_lf.running_var": [
+        32
+      ],
+      "module.Block4.bn_lf.num_batches_tracked": [],
+      "module.Block4.mamba_lf.alpha": [
+        1
+      ],
+      "module.Block4.mamba_lf.beta": [
+        1
+      ],
+      "module.Block4.mamba_lf.norm1.weight": [
+        32
+      ],
+      "module.Block4.mamba_lf.norm1.bias": [
+        32
+      ],
+      "module.Block4.mamba_lf.norm2.weight": [
+        32
+      ],
+      "module.Block4.mamba_lf.norm2.bias": [
+        32
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.D": [
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.conv1d.bias": [
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.D": [
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.conv1d.bias": [
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block4.gating_lf.fc.0.weight": [
+        16,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.gating_lf.fc.2.weight": [
+        32,
+        16,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.lowpass_lf.kernel": [
+        32,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block4.cdc_hf.conv.weight": [
+        32,
+        32,
+        3,
+        3,
+        3
+      ],
+      "module.Block4.bn_hf.weight": [
+        32
+      ],
+      "module.Block4.bn_hf.bias": [
+        32
+      ],
+      "module.Block4.bn_hf.running_mean": [
+        32
+      ],
+      "module.Block4.bn_hf.running_var": [
+        32
+      ],
+      "module.Block4.bn_hf.num_batches_tracked": [],
+      "module.Block4.mamba_hf.alpha": [
+        1
+      ],
+      "module.Block4.mamba_hf.beta": [
+        1
+      ],
+      "module.Block4.mamba_hf.norm1.weight": [
+        32
+      ],
+      "module.Block4.mamba_hf.norm1.bias": [
+        32
+      ],
+      "module.Block4.mamba_hf.norm2.weight": [
+        32
+      ],
+      "module.Block4.mamba_hf.norm2.bias": [
+        32
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.D": [
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.conv1d.bias": [
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.D": [
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.conv1d.bias": [
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block4.gating_hf.fc.0.weight": [
+        16,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.gating_hf.fc.2.weight": [
+        32,
+        16,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.freq_exchange.F_net.0.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.freq_exchange.F_net.1.weight": [
+        32
+      ],
+      "module.Block4.freq_exchange.F_net.1.bias": [
+        32
+      ],
+      "module.Block4.freq_exchange.F_net.1.running_mean": [
+        32
+      ],
+      "module.Block4.freq_exchange.F_net.1.running_var": [
+        32
+      ],
+      "module.Block4.freq_exchange.F_net.1.num_batches_tracked": [],
+      "module.Block4.freq_exchange.F_net.3.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.freq_exchange.G_net.0.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.freq_exchange.G_net.1.weight": [
+        32
+      ],
+      "module.Block4.freq_exchange.G_net.1.bias": [
+        32
+      ],
+      "module.Block4.freq_exchange.G_net.1.running_mean": [
+        32
+      ],
+      "module.Block4.freq_exchange.G_net.1.running_var": [
+        32
+      ],
+      "module.Block4.freq_exchange.G_net.1.num_batches_tracked": [],
+      "module.Block4.freq_exchange.G_net.3.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.freq_decomposer.lowpass_filter.kernel": [
+        32,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block5.cdc_lf.conv.weight": [
+        32,
+        32,
+        3,
+        3,
+        3
+      ],
+      "module.Block5.bn_lf.weight": [
+        32
+      ],
+      "module.Block5.bn_lf.bias": [
+        32
+      ],
+      "module.Block5.bn_lf.running_mean": [
+        32
+      ],
+      "module.Block5.bn_lf.running_var": [
+        32
+      ],
+      "module.Block5.bn_lf.num_batches_tracked": [],
+      "module.Block5.mamba_lf.alpha": [
+        1
+      ],
+      "module.Block5.mamba_lf.beta": [
+        1
+      ],
+      "module.Block5.mamba_lf.norm1.weight": [
+        32
+      ],
+      "module.Block5.mamba_lf.norm1.bias": [
+        32
+      ],
+      "module.Block5.mamba_lf.norm2.weight": [
+        32
+      ],
+      "module.Block5.mamba_lf.norm2.bias": [
+        32
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.D": [
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.conv1d.bias": [
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.D": [
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.conv1d.bias": [
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block5.gating_lf.fc.0.weight": [
+        16,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.gating_lf.fc.2.weight": [
+        32,
+        16,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.lowpass_lf.kernel": [
+        32,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block5.cdc_hf.conv.weight": [
+        32,
+        32,
+        3,
+        3,
+        3
+      ],
+      "module.Block5.bn_hf.weight": [
+        32
+      ],
+      "module.Block5.bn_hf.bias": [
+        32
+      ],
+      "module.Block5.bn_hf.running_mean": [
+        32
+      ],
+      "module.Block5.bn_hf.running_var": [
+        32
+      ],
+      "module.Block5.bn_hf.num_batches_tracked": [],
+      "module.Block5.mamba_hf.alpha": [
+        1
+      ],
+      "module.Block5.mamba_hf.beta": [
+        1
+      ],
+      "module.Block5.mamba_hf.norm1.weight": [
+        32
+      ],
+      "module.Block5.mamba_hf.norm1.bias": [
+        32
+      ],
+      "module.Block5.mamba_hf.norm2.weight": [
+        32
+      ],
+      "module.Block5.mamba_hf.norm2.bias": [
+        32
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.D": [
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.conv1d.bias": [
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.D": [
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.conv1d.bias": [
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block5.gating_hf.fc.0.weight": [
+        16,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.gating_hf.fc.2.weight": [
+        32,
+        16,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.freq_exchange.F_net.0.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.freq_exchange.F_net.1.weight": [
+        32
+      ],
+      "module.Block5.freq_exchange.F_net.1.bias": [
+        32
+      ],
+      "module.Block5.freq_exchange.F_net.1.running_mean": [
+        32
+      ],
+      "module.Block5.freq_exchange.F_net.1.running_var": [
+        32
+      ],
+      "module.Block5.freq_exchange.F_net.1.num_batches_tracked": [],
+      "module.Block5.freq_exchange.F_net.3.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.freq_exchange.G_net.0.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.freq_exchange.G_net.1.weight": [
+        32
+      ],
+      "module.Block5.freq_exchange.G_net.1.bias": [
+        32
+      ],
+      "module.Block5.freq_exchange.G_net.1.running_mean": [
+        32
+      ],
+      "module.Block5.freq_exchange.G_net.1.running_var": [
+        32
+      ],
+      "module.Block5.freq_exchange.G_net.1.num_batches_tracked": [],
+      "module.Block5.freq_exchange.G_net.3.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.freq_decomposer.lowpass_filter.kernel": [
+        32,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block6.cdc_lf.conv.weight": [
+        32,
+        32,
+        3,
+        3,
+        3
+      ],
+      "module.Block6.bn_lf.weight": [
+        32
+      ],
+      "module.Block6.bn_lf.bias": [
+        32
+      ],
+      "module.Block6.bn_lf.running_mean": [
+        32
+      ],
+      "module.Block6.bn_lf.running_var": [
+        32
+      ],
+      "module.Block6.bn_lf.num_batches_tracked": [],
+      "module.Block6.mamba_lf.alpha": [
+        1
+      ],
+      "module.Block6.mamba_lf.beta": [
+        1
+      ],
+      "module.Block6.mamba_lf.norm1.weight": [
+        32
+      ],
+      "module.Block6.mamba_lf.norm1.bias": [
+        32
+      ],
+      "module.Block6.mamba_lf.norm2.weight": [
+        32
+      ],
+      "module.Block6.mamba_lf.norm2.bias": [
+        32
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.D": [
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.conv1d.bias": [
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.D": [
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.conv1d.bias": [
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block6.gating_lf.fc.0.weight": [
+        16,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.gating_lf.fc.2.weight": [
+        32,
+        16,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.lowpass_lf.kernel": [
+        32,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block6.cdc_hf.conv.weight": [
+        32,
+        32,
+        3,
+        3,
+        3
+      ],
+      "module.Block6.bn_hf.weight": [
+        32
+      ],
+      "module.Block6.bn_hf.bias": [
+        32
+      ],
+      "module.Block6.bn_hf.running_mean": [
+        32
+      ],
+      "module.Block6.bn_hf.running_var": [
+        32
+      ],
+      "module.Block6.bn_hf.num_batches_tracked": [],
+      "module.Block6.mamba_hf.alpha": [
+        1
+      ],
+      "module.Block6.mamba_hf.beta": [
+        1
+      ],
+      "module.Block6.mamba_hf.norm1.weight": [
+        32
+      ],
+      "module.Block6.mamba_hf.norm1.bias": [
+        32
+      ],
+      "module.Block6.mamba_hf.norm2.weight": [
+        32
+      ],
+      "module.Block6.mamba_hf.norm2.bias": [
+        32
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.D": [
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.conv1d.bias": [
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.D": [
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.conv1d.bias": [
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block6.gating_hf.fc.0.weight": [
+        16,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.gating_hf.fc.2.weight": [
+        32,
+        16,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.freq_exchange.F_net.0.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.freq_exchange.F_net.1.weight": [
+        32
+      ],
+      "module.Block6.freq_exchange.F_net.1.bias": [
+        32
+      ],
+      "module.Block6.freq_exchange.F_net.1.running_mean": [
+        32
+      ],
+      "module.Block6.freq_exchange.F_net.1.running_var": [
+        32
+      ],
+      "module.Block6.freq_exchange.F_net.1.num_batches_tracked": [],
+      "module.Block6.freq_exchange.F_net.3.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.freq_exchange.G_net.0.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.freq_exchange.G_net.1.weight": [
+        32
+      ],
+      "module.Block6.freq_exchange.G_net.1.bias": [
+        32
+      ],
+      "module.Block6.freq_exchange.G_net.1.running_mean": [
+        32
+      ],
+      "module.Block6.freq_exchange.G_net.1.running_var": [
+        32
+      ],
+      "module.Block6.freq_exchange.G_net.1.num_batches_tracked": [],
+      "module.Block6.freq_exchange.G_net.3.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.upsample1.conv.weight": [
+        64,
+        64,
+        3,
+        1,
+        1
+      ],
+      "module.upsample1.conv.bias": [
+        64
+      ],
+      "module.upsample1.bn.weight": [
+        64
+      ],
+      "module.upsample1.bn.bias": [
+        64
+      ],
+      "module.upsample1.bn.running_mean": [
+        64
+      ],
+      "module.upsample1.bn.running_var": [
+        64
+      ],
+      "module.upsample1.bn.num_batches_tracked": [],
+      "module.upsample1.lowpass.kernel": [
+        64,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.upsample2.conv.weight": [
+        48,
+        96,
+        3,
+        1,
+        1
+      ],
+      "module.upsample2.conv.bias": [
+        48
+      ],
+      "module.upsample2.bn.weight": [
+        48
+      ],
+      "module.upsample2.bn.bias": [
+        48
+      ],
+      "module.upsample2.bn.running_mean": [
+        48
+      ],
+      "module.upsample2.bn.running_var": [
+        48
+      ],
+      "module.upsample2.bn.num_batches_tracked": [],
+      "module.upsample2.lowpass.kernel": [
+        48,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.ConvBlockLast.conv.0.weight": [
+        32,
+        48,
+        9,
+        9,
+        9
+      ],
+      "module.ConvBlockLast.conv.0.bias": [
+        32
+      ],
+      "module.ConvBlockLast.conv.2.weight": [
+        1,
+        32,
+        9,
+        9,
+        9
+      ],
+      "module.ConvBlockLast.conv.2.bias": [
+        1
+      ],
+      "module.ConvBlockLast.lowpass.kernel": [
+        1,
+        1,
+        9,
+        9,
+        9
+      ],
+      "module.cross_fuse_1.conv.0.weight": [
+        64,
+        32,
+        3,
+        1,
+        1
+      ],
+      "module.cross_fuse_1.conv.0.bias": [
+        64
+      ],
+      "module.cross_fuse_1.conv.1.weight": [
+        64
+      ],
+      "module.cross_fuse_1.conv.1.bias": [
+        64
+      ],
+      "module.cross_fuse_1.conv.1.running_mean": [
+        64
+      ],
+      "module.cross_fuse_1.conv.1.running_var": [
+        64
+      ],
+      "module.cross_fuse_1.conv.1.num_batches_tracked": [],
+      "module.cross_fuse_2.conv.0.weight": [
+        64,
+        32,
+        3,
+        1,
+        1
+      ],
+      "module.cross_fuse_2.conv.0.bias": [
+        64
+      ],
+      "module.cross_fuse_2.conv.1.weight": [
+        64
+      ],
+      "module.cross_fuse_2.conv.1.bias": [
+        64
+      ],
+      "module.cross_fuse_2.conv.1.running_mean": [
+        64
+      ],
+      "module.cross_fuse_2.conv.1.running_var": [
+        64
+      ],
+      "module.cross_fuse_2.conv.1.num_batches_tracked": []
+    }
+  },
+  {
+    "file": "PURE_PURE_UBFC_FreqSepPhys_Epoch49.pth",
+    "sha256": "8fabe9a8d86589400b19cc4f8ae2198493c43fe08fc50a6a78bc8cee4974c7e3",
+    "entries": 558,
+    "tensor_elements": 2804660,
+    "groups": {
+      "mamba": 288,
+      "freq": 90,
+      "F_net": 42,
+      "G_net": 42
+    },
+    "kernels": {
+      "module.ConvBlock6.lowpass.kernel": {
+        "shape": [
+          32,
+          1,
+          3,
+          3,
+          3
+        ],
+        "sum_first": 1.000000238418579,
+        "centerline": [
+          0.0651249885559082,
+          0.1422460526227951,
+          0.0651249885559082
+        ]
+      },
+      "module.Block1.freq_decomposer.lowpass_filter.kernel": {
+        "shape": [
+          64,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 0.9999997615814209,
+        "centerline": [
+          0.009886304847896099,
+          0.01570711098611355,
+          0.01832808367908001,
+          0.01570711098611355,
+          0.009886304847896099
+        ]
+      },
+      "module.Block1.lowpass_lf.kernel": {
+        "shape": [
+          64,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 0.9999997615814209,
+        "centerline": [
+          0.009886304847896099,
+          0.01570711098611355,
+          0.01832808367908001,
+          0.01570711098611355,
+          0.009886304847896099
+        ]
+      },
+      "module.Block2.freq_decomposer.lowpass_filter.kernel": {
+        "shape": [
+          64,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 0.9999997615814209,
+        "centerline": [
+          0.009886304847896099,
+          0.01570711098611355,
+          0.01832808367908001,
+          0.01570711098611355,
+          0.009886304847896099
+        ]
+      },
+      "module.Block2.lowpass_lf.kernel": {
+        "shape": [
+          64,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 0.9999997615814209,
+        "centerline": [
+          0.009886304847896099,
+          0.01570711098611355,
+          0.01832808367908001,
+          0.01570711098611355,
+          0.009886304847896099
+        ]
+      },
+      "module.Block3.freq_decomposer.lowpass_filter.kernel": {
+        "shape": [
+          64,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 0.9999997615814209,
+        "centerline": [
+          0.009886304847896099,
+          0.01570711098611355,
+          0.01832808367908001,
+          0.01570711098611355,
+          0.009886304847896099
+        ]
+      },
+      "module.Block3.lowpass_lf.kernel": {
+        "shape": [
+          64,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 0.9999997615814209,
+        "centerline": [
+          0.009886304847896099,
+          0.01570711098611355,
+          0.01832808367908001,
+          0.01570711098611355,
+          0.009886304847896099
+        ]
+      },
+      "module.Block4.freq_decomposer.lowpass_filter.kernel": {
+        "shape": [
+          32,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0,
+        "centerline": [
+          0.005463052075356245,
+          0.05692630633711815,
+          0.12433848530054092,
+          0.05692630633711815,
+          0.005463052075356245
+        ]
+      },
+      "module.Block4.lowpass_lf.kernel": {
+        "shape": [
+          32,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0,
+        "centerline": [
+          0.005463052075356245,
+          0.05692630633711815,
+          0.12433848530054092,
+          0.05692630633711815,
+          0.005463052075356245
+        ]
+      },
+      "module.Block5.freq_decomposer.lowpass_filter.kernel": {
+        "shape": [
+          32,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0,
+        "centerline": [
+          0.005463052075356245,
+          0.05692630633711815,
+          0.12433848530054092,
+          0.05692630633711815,
+          0.005463052075356245
+        ]
+      },
+      "module.Block5.lowpass_lf.kernel": {
+        "shape": [
+          32,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0,
+        "centerline": [
+          0.005463052075356245,
+          0.05692630633711815,
+          0.12433848530054092,
+          0.05692630633711815,
+          0.005463052075356245
+        ]
+      },
+      "module.Block6.freq_decomposer.lowpass_filter.kernel": {
+        "shape": [
+          32,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0,
+        "centerline": [
+          0.005463052075356245,
+          0.05692630633711815,
+          0.12433848530054092,
+          0.05692630633711815,
+          0.005463052075356245
+        ]
+      },
+      "module.Block6.lowpass_lf.kernel": {
+        "shape": [
+          32,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0,
+        "centerline": [
+          0.005463052075356245,
+          0.05692630633711815,
+          0.12433848530054092,
+          0.05692630633711815,
+          0.005463052075356245
+        ]
+      },
+      "module.upsample1.lowpass.kernel": {
+        "shape": [
+          64,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0000001192092896,
+        "centerline": [
+          0.008832770399749279,
+          0.03958573192358017,
+          0.06526583433151245,
+          0.03958573192358017,
+          0.008832770399749279
+        ]
+      },
+      "module.upsample2.lowpass.kernel": {
+        "shape": [
+          48,
+          1,
+          5,
+          5,
+          5
+        ],
+        "sum_first": 1.0000001192092896,
+        "centerline": [
+          0.008832770399749279,
+          0.03958573192358017,
+          0.06526583433151245,
+          0.03958573192358017,
+          0.008832770399749279
+        ]
+      },
+      "module.ConvBlockLast.lowpass.kernel": {
+        "shape": [
+          1,
+          1,
+          9,
+          9,
+          9
+        ],
+        "sum_first": 1.0,
+        "centerline": [
+          0.0005410366575233638,
+          0.0025632791221141815,
+          0.007786554284393787,
+          0.015166136436164379,
+          0.018940214067697525,
+          0.015166136436164379,
+          0.007786554284393787,
+          0.0025632791221141815,
+          0.0005410366575233638
+        ]
+      }
+    },
+    "keys_shapes": {
+      "module.ConvBlock1.0.weight": [
+        16,
+        3,
+        1,
+        5,
+        5
+      ],
+      "module.ConvBlock1.0.bias": [
+        16
+      ],
+      "module.ConvBlock1.1.weight": [
+        16
+      ],
+      "module.ConvBlock1.1.bias": [
+        16
+      ],
+      "module.ConvBlock1.1.running_mean": [
+        16
+      ],
+      "module.ConvBlock1.1.running_var": [
+        16
+      ],
+      "module.ConvBlock1.1.num_batches_tracked": [],
+      "module.ConvBlock2.0.weight": [
+        32,
+        16,
+        3,
+        3,
+        3
+      ],
+      "module.ConvBlock2.0.bias": [
+        32
+      ],
+      "module.ConvBlock2.1.weight": [
+        32
+      ],
+      "module.ConvBlock2.1.bias": [
+        32
+      ],
+      "module.ConvBlock2.1.running_mean": [
+        32
+      ],
+      "module.ConvBlock2.1.running_var": [
+        32
+      ],
+      "module.ConvBlock2.1.num_batches_tracked": [],
+      "module.ConvBlock3.0.weight": [
+        64,
+        32,
+        3,
+        3,
+        3
+      ],
+      "module.ConvBlock3.0.bias": [
+        64
+      ],
+      "module.ConvBlock3.1.weight": [
+        64
+      ],
+      "module.ConvBlock3.1.bias": [
+        64
+      ],
+      "module.ConvBlock3.1.running_mean": [
+        64
+      ],
+      "module.ConvBlock3.1.running_var": [
+        64
+      ],
+      "module.ConvBlock3.1.num_batches_tracked": [],
+      "module.ConvBlock4.0.weight": [
+        64,
+        64,
+        4,
+        1,
+        1
+      ],
+      "module.ConvBlock4.0.bias": [
+        64
+      ],
+      "module.ConvBlock4.1.weight": [
+        64
+      ],
+      "module.ConvBlock4.1.bias": [
+        64
+      ],
+      "module.ConvBlock4.1.running_mean": [
+        64
+      ],
+      "module.ConvBlock4.1.running_var": [
+        64
+      ],
+      "module.ConvBlock4.1.num_batches_tracked": [],
+      "module.ConvBlock5.0.weight": [
+        32,
+        64,
+        2,
+        1,
+        1
+      ],
+      "module.ConvBlock5.0.bias": [
+        32
+      ],
+      "module.ConvBlock5.1.weight": [
+        32
+      ],
+      "module.ConvBlock5.1.bias": [
+        32
+      ],
+      "module.ConvBlock5.1.running_mean": [
+        32
+      ],
+      "module.ConvBlock5.1.running_var": [
+        32
+      ],
+      "module.ConvBlock5.1.num_batches_tracked": [],
+      "module.ConvBlock6.conv.weight": [
+        32,
+        32,
+        3,
+        1,
+        1
+      ],
+      "module.ConvBlock6.conv.bias": [
+        32
+      ],
+      "module.ConvBlock6.bn.weight": [
+        32
+      ],
+      "module.ConvBlock6.bn.bias": [
+        32
+      ],
+      "module.ConvBlock6.bn.running_mean": [
+        32
+      ],
+      "module.ConvBlock6.bn.running_var": [
+        32
+      ],
+      "module.ConvBlock6.bn.num_batches_tracked": [],
+      "module.ConvBlock6.lowpass.kernel": [
+        32,
+        1,
+        3,
+        3,
+        3
+      ],
+      "module.Block1.freq_decomposer.lowpass_filter.kernel": [
+        64,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block1.cdc_lf.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "module.Block1.bn_lf.weight": [
+        64
+      ],
+      "module.Block1.bn_lf.bias": [
+        64
+      ],
+      "module.Block1.bn_lf.running_mean": [
+        64
+      ],
+      "module.Block1.bn_lf.running_var": [
+        64
+      ],
+      "module.Block1.bn_lf.num_batches_tracked": [],
+      "module.Block1.mamba_lf.alpha": [
+        1
+      ],
+      "module.Block1.mamba_lf.beta": [
+        1
+      ],
+      "module.Block1.mamba_lf.norm1.weight": [
+        64
+      ],
+      "module.Block1.mamba_lf.norm1.bias": [
+        64
+      ],
+      "module.Block1.mamba_lf.norm2.weight": [
+        64
+      ],
+      "module.Block1.mamba_lf.norm2.bias": [
+        64
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.D": [
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.conv1d.bias": [
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_fwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.D": [
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.conv1d.bias": [
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block1.mamba_lf.mamba_bwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block1.gating_lf.fc.0.weight": [
+        32,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block1.gating_lf.fc.2.weight": [
+        64,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block1.lowpass_lf.kernel": [
+        64,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block1.cdc_hf.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "module.Block1.bn_hf.weight": [
+        64
+      ],
+      "module.Block1.bn_hf.bias": [
+        64
+      ],
+      "module.Block1.bn_hf.running_mean": [
+        64
+      ],
+      "module.Block1.bn_hf.running_var": [
+        64
+      ],
+      "module.Block1.bn_hf.num_batches_tracked": [],
+      "module.Block1.mamba_hf.alpha": [
+        1
+      ],
+      "module.Block1.mamba_hf.beta": [
+        1
+      ],
+      "module.Block1.mamba_hf.norm1.weight": [
+        64
+      ],
+      "module.Block1.mamba_hf.norm1.bias": [
+        64
+      ],
+      "module.Block1.mamba_hf.norm2.weight": [
+        64
+      ],
+      "module.Block1.mamba_hf.norm2.bias": [
+        64
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.D": [
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.conv1d.bias": [
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_fwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.D": [
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.conv1d.bias": [
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block1.mamba_hf.mamba_bwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block1.gating_hf.fc.0.weight": [
+        32,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block1.gating_hf.fc.2.weight": [
+        64,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block1.freq_exchange.F_net.0.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block1.freq_exchange.F_net.1.weight": [
+        64
+      ],
+      "module.Block1.freq_exchange.F_net.1.bias": [
+        64
+      ],
+      "module.Block1.freq_exchange.F_net.1.running_mean": [
+        64
+      ],
+      "module.Block1.freq_exchange.F_net.1.running_var": [
+        64
+      ],
+      "module.Block1.freq_exchange.F_net.1.num_batches_tracked": [],
+      "module.Block1.freq_exchange.F_net.3.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block1.freq_exchange.G_net.0.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block1.freq_exchange.G_net.1.weight": [
+        64
+      ],
+      "module.Block1.freq_exchange.G_net.1.bias": [
+        64
+      ],
+      "module.Block1.freq_exchange.G_net.1.running_mean": [
+        64
+      ],
+      "module.Block1.freq_exchange.G_net.1.running_var": [
+        64
+      ],
+      "module.Block1.freq_exchange.G_net.1.num_batches_tracked": [],
+      "module.Block1.freq_exchange.G_net.3.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.freq_decomposer.lowpass_filter.kernel": [
+        64,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block2.cdc_lf.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "module.Block2.bn_lf.weight": [
+        64
+      ],
+      "module.Block2.bn_lf.bias": [
+        64
+      ],
+      "module.Block2.bn_lf.running_mean": [
+        64
+      ],
+      "module.Block2.bn_lf.running_var": [
+        64
+      ],
+      "module.Block2.bn_lf.num_batches_tracked": [],
+      "module.Block2.mamba_lf.alpha": [
+        1
+      ],
+      "module.Block2.mamba_lf.beta": [
+        1
+      ],
+      "module.Block2.mamba_lf.norm1.weight": [
+        64
+      ],
+      "module.Block2.mamba_lf.norm1.bias": [
+        64
+      ],
+      "module.Block2.mamba_lf.norm2.weight": [
+        64
+      ],
+      "module.Block2.mamba_lf.norm2.bias": [
+        64
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.D": [
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.conv1d.bias": [
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_fwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.D": [
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.conv1d.bias": [
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block2.mamba_lf.mamba_bwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block2.gating_lf.fc.0.weight": [
+        32,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.gating_lf.fc.2.weight": [
+        64,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.lowpass_lf.kernel": [
+        64,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block2.cdc_hf.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "module.Block2.bn_hf.weight": [
+        64
+      ],
+      "module.Block2.bn_hf.bias": [
+        64
+      ],
+      "module.Block2.bn_hf.running_mean": [
+        64
+      ],
+      "module.Block2.bn_hf.running_var": [
+        64
+      ],
+      "module.Block2.bn_hf.num_batches_tracked": [],
+      "module.Block2.mamba_hf.alpha": [
+        1
+      ],
+      "module.Block2.mamba_hf.beta": [
+        1
+      ],
+      "module.Block2.mamba_hf.norm1.weight": [
+        64
+      ],
+      "module.Block2.mamba_hf.norm1.bias": [
+        64
+      ],
+      "module.Block2.mamba_hf.norm2.weight": [
+        64
+      ],
+      "module.Block2.mamba_hf.norm2.bias": [
+        64
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.D": [
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.conv1d.bias": [
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_fwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.D": [
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.conv1d.bias": [
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block2.mamba_hf.mamba_bwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block2.gating_hf.fc.0.weight": [
+        32,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.gating_hf.fc.2.weight": [
+        64,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.freq_exchange.F_net.0.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.freq_exchange.F_net.1.weight": [
+        64
+      ],
+      "module.Block2.freq_exchange.F_net.1.bias": [
+        64
+      ],
+      "module.Block2.freq_exchange.F_net.1.running_mean": [
+        64
+      ],
+      "module.Block2.freq_exchange.F_net.1.running_var": [
+        64
+      ],
+      "module.Block2.freq_exchange.F_net.1.num_batches_tracked": [],
+      "module.Block2.freq_exchange.F_net.3.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.freq_exchange.G_net.0.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block2.freq_exchange.G_net.1.weight": [
+        64
+      ],
+      "module.Block2.freq_exchange.G_net.1.bias": [
+        64
+      ],
+      "module.Block2.freq_exchange.G_net.1.running_mean": [
+        64
+      ],
+      "module.Block2.freq_exchange.G_net.1.running_var": [
+        64
+      ],
+      "module.Block2.freq_exchange.G_net.1.num_batches_tracked": [],
+      "module.Block2.freq_exchange.G_net.3.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.freq_decomposer.lowpass_filter.kernel": [
+        64,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block3.cdc_lf.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "module.Block3.bn_lf.weight": [
+        64
+      ],
+      "module.Block3.bn_lf.bias": [
+        64
+      ],
+      "module.Block3.bn_lf.running_mean": [
+        64
+      ],
+      "module.Block3.bn_lf.running_var": [
+        64
+      ],
+      "module.Block3.bn_lf.num_batches_tracked": [],
+      "module.Block3.mamba_lf.alpha": [
+        1
+      ],
+      "module.Block3.mamba_lf.beta": [
+        1
+      ],
+      "module.Block3.mamba_lf.norm1.weight": [
+        64
+      ],
+      "module.Block3.mamba_lf.norm1.bias": [
+        64
+      ],
+      "module.Block3.mamba_lf.norm2.weight": [
+        64
+      ],
+      "module.Block3.mamba_lf.norm2.bias": [
+        64
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.D": [
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.conv1d.bias": [
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_fwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.D": [
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.conv1d.bias": [
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block3.mamba_lf.mamba_bwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block3.gating_lf.fc.0.weight": [
+        32,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.gating_lf.fc.2.weight": [
+        64,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.lowpass_lf.kernel": [
+        64,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block3.cdc_hf.conv.weight": [
+        64,
+        64,
+        3,
+        3,
+        3
+      ],
+      "module.Block3.bn_hf.weight": [
+        64
+      ],
+      "module.Block3.bn_hf.bias": [
+        64
+      ],
+      "module.Block3.bn_hf.running_mean": [
+        64
+      ],
+      "module.Block3.bn_hf.running_var": [
+        64
+      ],
+      "module.Block3.bn_hf.num_batches_tracked": [],
+      "module.Block3.mamba_hf.alpha": [
+        1
+      ],
+      "module.Block3.mamba_hf.beta": [
+        1
+      ],
+      "module.Block3.mamba_hf.norm1.weight": [
+        64
+      ],
+      "module.Block3.mamba_hf.norm1.bias": [
+        64
+      ],
+      "module.Block3.mamba_hf.norm2.weight": [
+        64
+      ],
+      "module.Block3.mamba_hf.norm2.bias": [
+        64
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.D": [
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.conv1d.bias": [
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_fwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.A_log": [
+        128,
+        16
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.D": [
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.in_proj.weight": [
+        256,
+        64
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.conv1d.weight": [
+        128,
+        1,
+        4
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.conv1d.bias": [
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.x_proj.weight": [
+        36,
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.dt_proj.weight": [
+        128,
+        4
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.dt_proj.bias": [
+        128
+      ],
+      "module.Block3.mamba_hf.mamba_bwd.out_proj.weight": [
+        64,
+        128
+      ],
+      "module.Block3.gating_hf.fc.0.weight": [
+        32,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.gating_hf.fc.2.weight": [
+        64,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.freq_exchange.F_net.0.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.freq_exchange.F_net.1.weight": [
+        64
+      ],
+      "module.Block3.freq_exchange.F_net.1.bias": [
+        64
+      ],
+      "module.Block3.freq_exchange.F_net.1.running_mean": [
+        64
+      ],
+      "module.Block3.freq_exchange.F_net.1.running_var": [
+        64
+      ],
+      "module.Block3.freq_exchange.F_net.1.num_batches_tracked": [],
+      "module.Block3.freq_exchange.F_net.3.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.freq_exchange.G_net.0.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block3.freq_exchange.G_net.1.weight": [
+        64
+      ],
+      "module.Block3.freq_exchange.G_net.1.bias": [
+        64
+      ],
+      "module.Block3.freq_exchange.G_net.1.running_mean": [
+        64
+      ],
+      "module.Block3.freq_exchange.G_net.1.running_var": [
+        64
+      ],
+      "module.Block3.freq_exchange.G_net.1.num_batches_tracked": [],
+      "module.Block3.freq_exchange.G_net.3.weight": [
+        64,
+        64,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.freq_decomposer.lowpass_filter.kernel": [
+        32,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block4.cdc_lf.conv.weight": [
+        32,
+        32,
+        3,
+        3,
+        3
+      ],
+      "module.Block4.bn_lf.weight": [
+        32
+      ],
+      "module.Block4.bn_lf.bias": [
+        32
+      ],
+      "module.Block4.bn_lf.running_mean": [
+        32
+      ],
+      "module.Block4.bn_lf.running_var": [
+        32
+      ],
+      "module.Block4.bn_lf.num_batches_tracked": [],
+      "module.Block4.mamba_lf.alpha": [
+        1
+      ],
+      "module.Block4.mamba_lf.beta": [
+        1
+      ],
+      "module.Block4.mamba_lf.norm1.weight": [
+        32
+      ],
+      "module.Block4.mamba_lf.norm1.bias": [
+        32
+      ],
+      "module.Block4.mamba_lf.norm2.weight": [
+        32
+      ],
+      "module.Block4.mamba_lf.norm2.bias": [
+        32
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.D": [
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.conv1d.bias": [
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_fwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.D": [
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.conv1d.bias": [
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block4.mamba_lf.mamba_bwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block4.gating_lf.fc.0.weight": [
+        16,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.gating_lf.fc.2.weight": [
+        32,
+        16,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.lowpass_lf.kernel": [
+        32,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block4.cdc_hf.conv.weight": [
+        32,
+        32,
+        3,
+        3,
+        3
+      ],
+      "module.Block4.bn_hf.weight": [
+        32
+      ],
+      "module.Block4.bn_hf.bias": [
+        32
+      ],
+      "module.Block4.bn_hf.running_mean": [
+        32
+      ],
+      "module.Block4.bn_hf.running_var": [
+        32
+      ],
+      "module.Block4.bn_hf.num_batches_tracked": [],
+      "module.Block4.mamba_hf.alpha": [
+        1
+      ],
+      "module.Block4.mamba_hf.beta": [
+        1
+      ],
+      "module.Block4.mamba_hf.norm1.weight": [
+        32
+      ],
+      "module.Block4.mamba_hf.norm1.bias": [
+        32
+      ],
+      "module.Block4.mamba_hf.norm2.weight": [
+        32
+      ],
+      "module.Block4.mamba_hf.norm2.bias": [
+        32
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.D": [
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.conv1d.bias": [
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_fwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.D": [
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.conv1d.bias": [
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block4.mamba_hf.mamba_bwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block4.gating_hf.fc.0.weight": [
+        16,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.gating_hf.fc.2.weight": [
+        32,
+        16,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.freq_exchange.F_net.0.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.freq_exchange.F_net.1.weight": [
+        32
+      ],
+      "module.Block4.freq_exchange.F_net.1.bias": [
+        32
+      ],
+      "module.Block4.freq_exchange.F_net.1.running_mean": [
+        32
+      ],
+      "module.Block4.freq_exchange.F_net.1.running_var": [
+        32
+      ],
+      "module.Block4.freq_exchange.F_net.1.num_batches_tracked": [],
+      "module.Block4.freq_exchange.F_net.3.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.freq_exchange.G_net.0.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block4.freq_exchange.G_net.1.weight": [
+        32
+      ],
+      "module.Block4.freq_exchange.G_net.1.bias": [
+        32
+      ],
+      "module.Block4.freq_exchange.G_net.1.running_mean": [
+        32
+      ],
+      "module.Block4.freq_exchange.G_net.1.running_var": [
+        32
+      ],
+      "module.Block4.freq_exchange.G_net.1.num_batches_tracked": [],
+      "module.Block4.freq_exchange.G_net.3.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.freq_decomposer.lowpass_filter.kernel": [
+        32,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block5.cdc_lf.conv.weight": [
+        32,
+        32,
+        3,
+        3,
+        3
+      ],
+      "module.Block5.bn_lf.weight": [
+        32
+      ],
+      "module.Block5.bn_lf.bias": [
+        32
+      ],
+      "module.Block5.bn_lf.running_mean": [
+        32
+      ],
+      "module.Block5.bn_lf.running_var": [
+        32
+      ],
+      "module.Block5.bn_lf.num_batches_tracked": [],
+      "module.Block5.mamba_lf.alpha": [
+        1
+      ],
+      "module.Block5.mamba_lf.beta": [
+        1
+      ],
+      "module.Block5.mamba_lf.norm1.weight": [
+        32
+      ],
+      "module.Block5.mamba_lf.norm1.bias": [
+        32
+      ],
+      "module.Block5.mamba_lf.norm2.weight": [
+        32
+      ],
+      "module.Block5.mamba_lf.norm2.bias": [
+        32
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.D": [
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.conv1d.bias": [
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_fwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.D": [
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.conv1d.bias": [
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block5.mamba_lf.mamba_bwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block5.gating_lf.fc.0.weight": [
+        16,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.gating_lf.fc.2.weight": [
+        32,
+        16,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.lowpass_lf.kernel": [
+        32,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block5.cdc_hf.conv.weight": [
+        32,
+        32,
+        3,
+        3,
+        3
+      ],
+      "module.Block5.bn_hf.weight": [
+        32
+      ],
+      "module.Block5.bn_hf.bias": [
+        32
+      ],
+      "module.Block5.bn_hf.running_mean": [
+        32
+      ],
+      "module.Block5.bn_hf.running_var": [
+        32
+      ],
+      "module.Block5.bn_hf.num_batches_tracked": [],
+      "module.Block5.mamba_hf.alpha": [
+        1
+      ],
+      "module.Block5.mamba_hf.beta": [
+        1
+      ],
+      "module.Block5.mamba_hf.norm1.weight": [
+        32
+      ],
+      "module.Block5.mamba_hf.norm1.bias": [
+        32
+      ],
+      "module.Block5.mamba_hf.norm2.weight": [
+        32
+      ],
+      "module.Block5.mamba_hf.norm2.bias": [
+        32
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.D": [
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.conv1d.bias": [
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_fwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.D": [
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.conv1d.bias": [
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block5.mamba_hf.mamba_bwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block5.gating_hf.fc.0.weight": [
+        16,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.gating_hf.fc.2.weight": [
+        32,
+        16,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.freq_exchange.F_net.0.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.freq_exchange.F_net.1.weight": [
+        32
+      ],
+      "module.Block5.freq_exchange.F_net.1.bias": [
+        32
+      ],
+      "module.Block5.freq_exchange.F_net.1.running_mean": [
+        32
+      ],
+      "module.Block5.freq_exchange.F_net.1.running_var": [
+        32
+      ],
+      "module.Block5.freq_exchange.F_net.1.num_batches_tracked": [],
+      "module.Block5.freq_exchange.F_net.3.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.freq_exchange.G_net.0.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block5.freq_exchange.G_net.1.weight": [
+        32
+      ],
+      "module.Block5.freq_exchange.G_net.1.bias": [
+        32
+      ],
+      "module.Block5.freq_exchange.G_net.1.running_mean": [
+        32
+      ],
+      "module.Block5.freq_exchange.G_net.1.running_var": [
+        32
+      ],
+      "module.Block5.freq_exchange.G_net.1.num_batches_tracked": [],
+      "module.Block5.freq_exchange.G_net.3.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.freq_decomposer.lowpass_filter.kernel": [
+        32,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block6.cdc_lf.conv.weight": [
+        32,
+        32,
+        3,
+        3,
+        3
+      ],
+      "module.Block6.bn_lf.weight": [
+        32
+      ],
+      "module.Block6.bn_lf.bias": [
+        32
+      ],
+      "module.Block6.bn_lf.running_mean": [
+        32
+      ],
+      "module.Block6.bn_lf.running_var": [
+        32
+      ],
+      "module.Block6.bn_lf.num_batches_tracked": [],
+      "module.Block6.mamba_lf.alpha": [
+        1
+      ],
+      "module.Block6.mamba_lf.beta": [
+        1
+      ],
+      "module.Block6.mamba_lf.norm1.weight": [
+        32
+      ],
+      "module.Block6.mamba_lf.norm1.bias": [
+        32
+      ],
+      "module.Block6.mamba_lf.norm2.weight": [
+        32
+      ],
+      "module.Block6.mamba_lf.norm2.bias": [
+        32
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.D": [
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.conv1d.bias": [
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_fwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.D": [
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.conv1d.bias": [
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block6.mamba_lf.mamba_bwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block6.gating_lf.fc.0.weight": [
+        16,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.gating_lf.fc.2.weight": [
+        32,
+        16,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.lowpass_lf.kernel": [
+        32,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.Block6.cdc_hf.conv.weight": [
+        32,
+        32,
+        3,
+        3,
+        3
+      ],
+      "module.Block6.bn_hf.weight": [
+        32
+      ],
+      "module.Block6.bn_hf.bias": [
+        32
+      ],
+      "module.Block6.bn_hf.running_mean": [
+        32
+      ],
+      "module.Block6.bn_hf.running_var": [
+        32
+      ],
+      "module.Block6.bn_hf.num_batches_tracked": [],
+      "module.Block6.mamba_hf.alpha": [
+        1
+      ],
+      "module.Block6.mamba_hf.beta": [
+        1
+      ],
+      "module.Block6.mamba_hf.norm1.weight": [
+        32
+      ],
+      "module.Block6.mamba_hf.norm1.bias": [
+        32
+      ],
+      "module.Block6.mamba_hf.norm2.weight": [
+        32
+      ],
+      "module.Block6.mamba_hf.norm2.bias": [
+        32
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.D": [
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.conv1d.bias": [
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_fwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.A_log": [
+        64,
+        16
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.D": [
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.in_proj.weight": [
+        128,
+        32
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.conv1d.weight": [
+        64,
+        1,
+        4
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.conv1d.bias": [
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.x_proj.weight": [
+        34,
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.dt_proj.weight": [
+        64,
+        2
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.dt_proj.bias": [
+        64
+      ],
+      "module.Block6.mamba_hf.mamba_bwd.out_proj.weight": [
+        32,
+        64
+      ],
+      "module.Block6.gating_hf.fc.0.weight": [
+        16,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.gating_hf.fc.2.weight": [
+        32,
+        16,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.freq_exchange.F_net.0.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.freq_exchange.F_net.1.weight": [
+        32
+      ],
+      "module.Block6.freq_exchange.F_net.1.bias": [
+        32
+      ],
+      "module.Block6.freq_exchange.F_net.1.running_mean": [
+        32
+      ],
+      "module.Block6.freq_exchange.F_net.1.running_var": [
+        32
+      ],
+      "module.Block6.freq_exchange.F_net.1.num_batches_tracked": [],
+      "module.Block6.freq_exchange.F_net.3.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.freq_exchange.G_net.0.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.Block6.freq_exchange.G_net.1.weight": [
+        32
+      ],
+      "module.Block6.freq_exchange.G_net.1.bias": [
+        32
+      ],
+      "module.Block6.freq_exchange.G_net.1.running_mean": [
+        32
+      ],
+      "module.Block6.freq_exchange.G_net.1.running_var": [
+        32
+      ],
+      "module.Block6.freq_exchange.G_net.1.num_batches_tracked": [],
+      "module.Block6.freq_exchange.G_net.3.weight": [
+        32,
+        32,
+        1,
+        1,
+        1
+      ],
+      "module.upsample1.conv.weight": [
+        64,
+        64,
+        3,
+        1,
+        1
+      ],
+      "module.upsample1.conv.bias": [
+        64
+      ],
+      "module.upsample1.bn.weight": [
+        64
+      ],
+      "module.upsample1.bn.bias": [
+        64
+      ],
+      "module.upsample1.bn.running_mean": [
+        64
+      ],
+      "module.upsample1.bn.running_var": [
+        64
+      ],
+      "module.upsample1.bn.num_batches_tracked": [],
+      "module.upsample1.lowpass.kernel": [
+        64,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.upsample2.conv.weight": [
+        48,
+        96,
+        3,
+        1,
+        1
+      ],
+      "module.upsample2.conv.bias": [
+        48
+      ],
+      "module.upsample2.bn.weight": [
+        48
+      ],
+      "module.upsample2.bn.bias": [
+        48
+      ],
+      "module.upsample2.bn.running_mean": [
+        48
+      ],
+      "module.upsample2.bn.running_var": [
+        48
+      ],
+      "module.upsample2.bn.num_batches_tracked": [],
+      "module.upsample2.lowpass.kernel": [
+        48,
+        1,
+        5,
+        5,
+        5
+      ],
+      "module.ConvBlockLast.conv.0.weight": [
+        32,
+        48,
+        9,
+        9,
+        9
+      ],
+      "module.ConvBlockLast.conv.0.bias": [
+        32
+      ],
+      "module.ConvBlockLast.conv.2.weight": [
+        1,
+        32,
+        9,
+        9,
+        9
+      ],
+      "module.ConvBlockLast.conv.2.bias": [
+        1
+      ],
+      "module.ConvBlockLast.lowpass.kernel": [
+        1,
+        1,
+        9,
+        9,
+        9
+      ],
+      "module.cross_fuse_1.conv.0.weight": [
+        64,
+        32,
+        3,
+        1,
+        1
+      ],
+      "module.cross_fuse_1.conv.0.bias": [
+        64
+      ],
+      "module.cross_fuse_1.conv.1.weight": [
+        64
+      ],
+      "module.cross_fuse_1.conv.1.bias": [
+        64
+      ],
+      "module.cross_fuse_1.conv.1.running_mean": [
+        64
+      ],
+      "module.cross_fuse_1.conv.1.running_var": [
+        64
+      ],
+      "module.cross_fuse_1.conv.1.num_batches_tracked": [],
+      "module.cross_fuse_2.conv.0.weight": [
+        64,
+        32,
+        3,
+        1,
+        1
+      ],
+      "module.cross_fuse_2.conv.0.bias": [
+        64
+      ],
+      "module.cross_fuse_2.conv.1.weight": [
+        64
+      ],
+      "module.cross_fuse_2.conv.1.bias": [
+        64
+      ],
+      "module.cross_fuse_2.conv.1.running_mean": [
+        64
+      ],
+      "module.cross_fuse_2.conv.1.running_var": [
+        64
+      ],
+      "module.cross_fuse_2.conv.1.num_batches_tracked": []
+    }
+  }
+]
