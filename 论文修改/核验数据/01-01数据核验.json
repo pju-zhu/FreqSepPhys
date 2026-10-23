@@ -1,0 +1,25 @@
+{
+  "source": "01-01.zip reconstructed from 26 uploaded 25 MiB volumes",
+  "zip_sha256": "d0f972aa4ad6d71a910bbf7ba911c4563fc191a311d86a7de28f4888675af895",
+  "zip_bytes": 680591861,
+  "image_count": 2026,
+  "image_shape": "640x480 RGB",
+  "image_first_timestamp_ns": 1392643993642815000,
+  "image_last_timestamp_ns": 1392644061342837000,
+  "image_duration_s": 67.700022,
+  "label_count": 4018,
+  "label_first_timestamp_ns": 1392643993646759000,
+  "label_last_timestamp_ns": 1392644061341528000,
+  "label_duration_s": 67.694769,
+  "label_keys": [
+    "Timestamp",
+    "Value",
+    "FrameID"
+  ],
+  "waveform_present": true,
+  "image_timestamp_monotonic": true,
+  "label_timestamp_monotonic": true,
+  "median_image_interval_ms": 33.344,
+  "median_label_interval_ms": 16.0,
+  "model_inference_status": "Not run: current environment lacks mamba_ssm and timm; Epoch4 checkpoint requires the original dependency environment and preprocessing."
+}
